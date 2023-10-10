@@ -1,0 +1,41 @@
+.outerContainer {
+  height: 50px;
+  width: 150px;
+  border: 1px solid #000;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.text {
+  z-index: 10;
+  transition: 0.3s;
+  color: #000;
+}
+
+.innerContainer {
+  position: absolute;
+  background-color: #000;
+  transition: 0.3s ease-out;
+  height: 155px;
+  width: 155px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* ----------------------------------------- */
+/* HOVER */
+/* ----------------------------------------- */
+
+.outerContainer:hover .text {
+  color: #eee;
+}
+
+.outerContainer:hover .innerContainer {
+  opacity: 1;
+  transform: scale(1);
+}
