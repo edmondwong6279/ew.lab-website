@@ -21,9 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cx(inter.className, "relative")}>
+      <body
+        className={cx(inter.className, "relative min-h-screen flex flex-col")}
+      >
         <NavBar theme="light" />
-        {children}
+        <div className="flex flex-auto flex-col justify-center items-center">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

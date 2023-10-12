@@ -6,7 +6,6 @@ export const navArray = [
 
 export const footerArray = [
   { link: "/privacy-policy", text: "Privacy Policy" },
-  { link: "/sitemap", text: "Sitemap" },
   { link: "/terms-and-conditions", text: "Terms & conditions" }
 ];
 

@@ -1,27 +1,37 @@
 .outerContainer {
-  height: 50px;
-  width: 150px;
-  border: 1px solid #000;
+  height: 57px;
+  width: 57px;
+  border-radius: 50%;
+  border: 1px solid
+    rgba(
+      $color: (
+        #000
+      ),
+      $alpha: 0.9
+    );
+  background-color: #fff;
   overflow: hidden;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 0;
 }
 
-.text {
+.line {
   z-index: 10;
   transition: 0.3s;
-  color: #000;
+  stroke: #000;
 }
 
 .innerContainer {
+  z-index: -10;
   position: absolute;
-  background-color: #000;
+  background-color: var(--lab-neon);
   transition: 0.3s ease-out;
-  height: 155px;
-  width: 155px;
+  height: 57px;
+  width: 57px;
   border-radius: 50%;
   opacity: 0;
   transform: scale(0);
@@ -31,8 +41,8 @@
 /* HOVER */
 /* ----------------------------------------- */
 
-.outerContainer:hover .text {
-  color: #eee;
+.outerContainer:hover .line {
+  stroke: #000;
 }
 
 .outerContainer:hover .innerContainer {

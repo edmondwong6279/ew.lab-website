@@ -1,7 +1,8 @@
 .outerContainer {
   height: 50px;
   width: 150px;
-  border: 1px solid #000;
+  border-width: 1px;
+  border-style: solid;
   overflow: hidden;
   cursor: pointer;
   display: flex;
@@ -13,12 +14,11 @@
 .text {
   z-index: 10;
   transition: 0.3s;
-  color: #000;
 }
 
 .innerContainer {
   position: absolute;
-  background-color: #000;
+  background-color: var(--lab-neon);
   transition: 0.3s ease-out;
   height: 155px;
   width: 155px;
@@ -27,12 +27,12 @@
   transform: scale(0);
 }
 
-/* ----------------------------------------- */
-/* HOVER */
-/* ----------------------------------------- */
+.outerContainer:hover {
+  border: 1px solid #000 !important;
+}
 
 .outerContainer:hover .text {
-  color: #eee;
+  color: #000 !important; // ain't happy about this
 }
 
 .outerContainer:hover .innerContainer {

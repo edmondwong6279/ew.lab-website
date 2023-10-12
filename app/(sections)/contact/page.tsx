@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Work() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex  flex-col items-center justify-between p-24">
       <div>
         <h1>Contact us</h1>
         <p>
