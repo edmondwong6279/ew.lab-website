@@ -16,14 +16,14 @@ export default function NavBar({ theme }: { theme: "light" | "dark" }) {
   const pathname = usePathname();
   const size = useWindowSize();
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
-  const [viewIsMobile, setviewIsMobile] = useState(
-    size.width < parseInt(stylesVar.tablet)
-  );
+  const [viewIsMobile, setviewIsMobile] = useState(false);
 
   useEffect(() => {
-    setviewIsMobile(size.width < parseInt(stylesVar.tablet));
-    if (!(size.width < parseInt(stylesVar.tablet))) {
-      setIsHamburgerOpen(false);
+    if (size.width) {
+      setviewIsMobile(size.width < parseInt(stylesVar.tablet));
+      if (!(size.width < parseInt(stylesVar.tablet))) {
+        setIsHamburgerOpen(false);
+      }
     }
   }, [viewIsMobile, size]);
 

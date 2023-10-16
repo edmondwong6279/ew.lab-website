@@ -20,6 +20,7 @@
   .hero {
     @include flexCenter;
     @include pageContainer;
+    @include scrollSnapContainer;
     position: relative;
     height: calc(100vh - var(--nav-bar-height));
     overflow: hidden;
@@ -34,7 +35,11 @@
 
       padding-right: 0;
       justify-content: center;
-      width: 40%;
+      width: 100%;
+
+      @include tablet {
+        width: 40%;
+      }
 
       .text {
         @include lab-h1;
@@ -50,9 +55,15 @@
       object-fit: contain;
       z-index: -10;
     }
+
+    .arrow {
+      position: absolute;
+      bottom: 96px;
+    }
   }
 
   .lastContainer {
+    @include scrollSnapContainer;
     height: calc(100vh - var(--nav-bar-height) - var(--footer-height));
   }
 }

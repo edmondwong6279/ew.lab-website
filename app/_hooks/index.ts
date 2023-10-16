@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 
 export const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState<{
-    width: number;
-    height: number;
+    width?: number;
+    height?: number;
   }>({
-    width: 1440,
-    height: 800
+    width: undefined,
+    height: undefined
   });
 
   useEffect(() => {
@@ -55,7 +55,7 @@ export const usePositionInViewport = (elementId: string) => {
     window.addEventListener("scroll", updatePosition);
     updatePosition();
     return () => window.removeEventListener("scroll", updatePosition);
-  }, []);
+  }, [elementId]);
 
   return positionInViewPort;
 };

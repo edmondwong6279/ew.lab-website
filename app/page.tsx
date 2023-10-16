@@ -1,5 +1,3 @@
-"use client";
-
 // WIP
 import Image from "next/image";
 
@@ -7,23 +5,14 @@ import Button from "@/components/Button";
 import ArrowDown from "@/components/ArrowDown";
 import FeatureBlock from "@/components/FeatureBlock";
 import ClientLogos from "@/components/ClientLogos";
-import { usePositionInViewport, useScrollPosition } from "@/hooks/index";
 
 import styles from "./root.module.scss";
+import { homeFeatures } from "./_constants";
 
 export default function Home() {
-  // const scrollPos = usePositionInViewport("start");
-
-  // TODO use this to determine the pagination thing
-  // TODO AND use it to fade the text
-  // console.log(scrollPos);
-
   return (
     <main className={styles.container}>
-      <section
-        className={styles.hero}
-        style={{ scrollSnapAlign: "start", scrollSnapStop: "always" }}
-      >
+      <section className={styles.hero}>
         <div className={styles.textContainer}>
           <h1 className={styles.text}>
             Delivering insight-led, impactful digital experiences.
@@ -36,81 +25,38 @@ export default function Home() {
           src={"/RiverrHero-Image.png"}
           height={800}
           width={740}
+          priority
         />
-        <div className="absolute bottom-24">
-          <ArrowDown anchor="#start" />
+        <div className={styles.arrow}>
+          <ArrowDown anchor="#Superdry" />
         </div>
       </section>
 
-      <div
-        style={{ scrollSnapAlign: "start", scrollSnapStop: "always" }}
-        id="start"
-      >
-        <FeatureBlock
-          title={"Superdry"}
-          subtitle={"Redesigning the mobile e-commerce experience"}
-          buttonText={"View Superdry"}
-          buttonLink={"/work/superdry"}
-          backgroundImage={"/FeatureBlocks/Superdry.png"}
-          backgroundImageAlt={"Superdry background image"}
-          // fadePercentage={Math.max(Math.min(scrollPos / 804, 1), 0)}
-        />
-      </div>
+      {homeFeatures.map(
+        (
+          {
+            title,
+            subtitle,
+            buttonText,
+            buttonLink,
+            backgroundImage,
+            backgroundImageAlt
+          },
+          idx
+        ) => (
+          <FeatureBlock
+            key={idx}
+            title={title}
+            subtitle={subtitle}
+            buttonText={buttonText}
+            buttonLink={buttonLink}
+            backgroundImage={backgroundImage}
+            backgroundImageAlt={backgroundImageAlt}
+          />
+        )
+      )}
 
-      <div style={{ scrollSnapAlign: "start", scrollSnapStop: "always" }}>
-        <FeatureBlock
-          title={"Teamsport"}
-          subtitle={"Moving to a performant composable platform"}
-          buttonText={"View Teamsport"}
-          buttonLink={"/work/superdry"}
-          backgroundImage={"/FeatureBlocks/Teamsport.png"}
-          backgroundImageAlt={"Teamsport background image"}
-          // fadePercentage={Math.max(Math.min(scrollPos / 804, 1), 0)}
-        />
-      </div>
-
-      <div style={{ scrollSnapAlign: "start", scrollSnapStop: "always" }}>
-        <FeatureBlock
-          title={"Neovest"}
-          subtitle={"Refreshing the brand and website for a global hedgfund"}
-          buttonText={"View Neovest"}
-          buttonLink={"/work/superdry"}
-          backgroundImage={"/FeatureBlocks/Neovest.png"}
-          backgroundImageAlt={"Neovest background image"}
-          // fadePercentage={Math.max(Math.min(scrollPos / 804, 1), 0)}
-        />
-      </div>
-
-      <div style={{ scrollSnapAlign: "start", scrollSnapStop: "always" }}>
-        <FeatureBlock
-          title={"Hestia"}
-          subtitle={"Designing for empathy"}
-          buttonText={"View Hestia"}
-          buttonLink={"/work/superdry"}
-          backgroundImage={"/FeatureBlocks/Hestia.png"}
-          backgroundImageAlt={"Hestia background image"}
-          // fadePercentage={1}
-        />
-      </div>
-
-      <div style={{ scrollSnapAlign: "start", scrollSnapStop: "always" }}>
-        <FeatureBlock
-          title={"Tevva"}
-          subtitle={"Launching Tevva's Hydrogen Electric Truck brand"}
-          buttonText={"View Tevva"}
-          buttonLink={"/work/superdry"}
-          backgroundImage={"/FeatureBlocks/Tevva.png"}
-          backgroundImageAlt={"Tevva background image"}
-          // fadePercentage={1}
-        />
-      </div>
-
-      <div
-        style={{
-          scrollSnapAlign: "center"
-        }}
-        className={styles.lastContainer}
-      >
+      <div className={styles.lastContainer}>
         <ClientLogos />
       </div>
     </main>
