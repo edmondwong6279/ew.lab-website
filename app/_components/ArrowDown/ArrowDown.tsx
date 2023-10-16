@@ -11,14 +11,6 @@ export default function ArrowDown({ anchor }: { anchor: string }) {
         fill="none"
         className="-z-0"
       >
-        {/* <circle
-          opacity="0.9"
-          cx="28.5"
-          cy="28.5"
-          r="28"
-          fill="white"
-          stroke="black"
-        /> */}
         <path
           d="M46 25L28.3716 37.8541L10.7449 25"
           strokeWidth="2"

@@ -13,16 +13,11 @@ export default function Footer() {
   const pathname = usePathname();
 
   return (
-    <footer
-      className={cx(
-        styles.footer,
-        "px-20 h-14 flex w-full items-center justify-between"
-      )}
-    >
+    <footer className={styles.footer}>
       <div>&copy;2023 LAB. All rights reserved.</div>
-      <div className="flex">
+      <div className={styles.links}>
         {footerArray.map(({ link, text }, idx) => (
-          <Link key={idx} href={link} className={cx(styles.link, "px-5")}>
+          <Link key={idx} href={link} className={styles.link}>
             {text}
           </Link>
         ))}

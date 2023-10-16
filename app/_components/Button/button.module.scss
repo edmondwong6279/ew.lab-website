@@ -1,38 +1,70 @@
 .outerContainer {
+  display: flex;
   height: 50px;
   width: 150px;
   border-width: 1px;
   border-style: solid;
   overflow: hidden;
   cursor: pointer;
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.text {
-  z-index: 10;
-  transition: 0.3s;
-}
-
-.innerContainer {
-  position: absolute;
-  background-color: var(--lab-neon);
   transition: 0.3s ease-out;
-  height: 155px;
-  width: 155px;
-  border-radius: 50%;
-  opacity: 0;
-  transform: scale(0);
+
+  .text {
+    display: flex;
+    z-index: 10;
+    transition: 0.3s;
+  }
+
+  .innerContainer {
+    position: absolute;
+    background-color: var(--lab-neon);
+    transition: 0.3s ease-out;
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.black {
+  color: var(--white);
+  border-color: var(--black);
+  background-color: var(--black);
+}
+
+.yellow {
+  color: var(--black);
+  border-color: var(--black);
+  background-color: var(--lab-neon);
+}
+
+.yellow-line {
+  color: var(--lab-neon);
+  border-color: var(--lab-neon);
+  background-color: transparent;
+}
+
+.white {
+  color: var(--white);
+  border-color: var(--white);
+  background-color: transparent;
+}
+
+.clear {
+  color: var(--black);
+  border-color: var(--black);
+  background-color: transparent;
 }
 
 .outerContainer:hover {
-  border: 1px solid #000 !important;
+  border: 1px solid #000000;
 }
 
 .outerContainer:hover .text {
-  color: #000 !important; // ain't happy about this
+  color: #000000;
 }
 
 .outerContainer:hover .innerContainer {

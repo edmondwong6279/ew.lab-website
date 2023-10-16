@@ -1,16 +1,29 @@
 .footer {
+  display: flex;
+  height: var(--footer-height);
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 80px;
+
   background-color: var(--lab-black);
-  color: #fff;
-}
+  color: var(--white);
 
-.link + .link {
-  border-left: 1px solid #fff;
-}
+  .links {
+    .link {
+      padding-inline: 20px;
+    }
 
-.link:first-child {
-  padding-left: 0;
-}
+    .link + .link {
+      border-left: 1px solid #fff;
+    }
 
-.link:last-child {
-  padding-right: 0;
+    .link:first-child {
+      padding-left: 0;
+    }
+
+    .link:last-child {
+      padding-right: 0;
+    }
+  }
 }

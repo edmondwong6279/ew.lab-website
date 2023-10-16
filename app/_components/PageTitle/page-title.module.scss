@@ -1,0 +1,40 @@
+@import "@/styles/variables.module.scss";
+
+.header {
+  @include pageContainer;
+  position: relative;
+  width: 100%;
+
+  &.default {
+    background-color: var(--white);
+  }
+
+  &.work {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--black);
+
+    @include tablet {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+  }
+
+  .text {
+    @include lab-h1;
+
+    @include tablet {
+      width: 75%;
+    }
+
+    &.default {
+      padding-top: 80px;
+      color: var(--black);
+    }
+
+    &.work {
+      width: 100%;
+      color: var(--white);
+    }
+  }
+}

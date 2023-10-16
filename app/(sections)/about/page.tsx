@@ -1,6 +1,9 @@
-import ArrowDown from "@/app/_components/ArrowDown";
-import PageTitle from "@/app/_components/PageTitle";
+// WIP
+import Accordion from "@/components/Accordion";
+import ArrowDown from "@/components/ArrowDown";
 import Button from "@/components/Button";
+import ClientLogos from "@/components/ClientLogos";
+import PageTitle from "@/components/PageTitle";
 
 export default function Work() {
   return (
@@ -11,36 +14,15 @@ export default function Work() {
         variant="work"
       />
       <div className="flex flex-col gap-3 p-3 bg-gray-300">
-        <Button
-          text={"See our Work"}
-          link="/"
-          textColor={"#000"}
-          borderColor={"#000"}
-          backgroundColor={"transparent"}
-        />
-        <Button
-          text={"See our Work"}
-          link="/"
-          textColor={"#fff"}
-          borderColor={"#000"}
-          backgroundColor={"#000"}
-        />
-        <Button
-          text={"See our Work"}
-          link="/"
-          textColor={"#fff"}
-          borderColor={"#fff"}
-          backgroundColor={"transparent"}
-        />
-        <Button
-          text={"See our Work"}
-          link="/"
-          textColor={"#E4FF00"}
-          borderColor={"#E4FF00"}
-          backgroundColor={"transparent"}
-        />
+        <Button text={"See our Work"} link="/" variant="black" />
+        <Button text={"See our Work"} link="/" variant="clear" />
+        <Button text={"See our Work"} link="/" variant="white" />
+        <Button text={"See our Work"} link="/" variant="yellow" />
+        <Button text={"See our Work"} link="/" variant="yellow-line" />
       </div>
       <ArrowDown anchor={"#"} />
+      <Accordion />
+      <ClientLogos />
     </main>
   );
 }

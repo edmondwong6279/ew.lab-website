@@ -6,7 +6,10 @@ export const navArray = [
 
 export const footerArray = [
   { link: "/privacy-policy", text: "Privacy Policy" },
-  { link: "/terms-and-conditions", text: "Terms & conditions" }
+  {
+    link: "https://lab.co.uk/LAB.LEGAL.STAND-TSCS.04.02.pdf",
+    text: "Terms & conditions"
+  }
 ];
 
 export const projectsArray = [

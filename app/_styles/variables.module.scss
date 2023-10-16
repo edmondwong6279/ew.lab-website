@@ -1,0 +1,79 @@
+// BREAKPOINTS
+$tablet: 768px;
+$desktop: 1024px;
+
+// Export for using in the nav bar
+:export {
+  tablet: $tablet;
+  desktop: $desktop;
+}
+
+// media queries
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+// global styles
+@mixin lab-h1 {
+  font-weight: 300;
+  line-height: 55px;
+  font-size: 2.1875rem;
+
+  @include tablet {
+    line-height: 75px;
+    font-size: 3.75rem;
+  }
+}
+
+@mixin lab-h2 {
+  font-weight: 300;
+  line-height: 75px;
+  font-size: 3.125rem;
+}
+
+@mixin lab-h3 {
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 2rem;
+}
+
+@mixin lab-h4 {
+  font-weight: 400;
+  line-height: 36px;
+  font-size: 1.5rem;
+}
+
+@mixin lab-body {
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 1rem;
+}
+
+@mixin pageContainer {
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include tablet {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

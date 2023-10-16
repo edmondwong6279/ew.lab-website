@@ -1,0 +1,12 @@
+@import "@/styles/variables.module.scss";
+
+.testContainer {
+  // @include pageContainer;
+  height: calc(100vh - var(--nav-bar-height));
+  // height: 100%;
+  width: 100vw;
+
+  .slide {
+    top: var(--nav-bar-height-negative);
+  }
+}

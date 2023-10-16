@@ -1,10 +1,15 @@
+// WIP
+import PageTitle from "@/components/PageTitle";
 import { projectsArray } from "@/constants/index";
 import Link from "next/link";
 
 export default function Work() {
   return (
-    <main className="flex en p-24">
-      <h1>Work Landing Page</h1>
+    <main className="">
+      <PageTitle
+        title="Combining the right expertise to deliver new approaches and lasting impact"
+        variant="work"
+      />
       <ol className="flex justify-between">
         {projectsArray.map(({ link, text }, idx) => (
           <li key={idx}>

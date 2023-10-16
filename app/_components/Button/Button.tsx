@@ -1,28 +1,20 @@
 import Link from "next/link";
+import cx from "classix";
+
 import styles from "./button.module.scss";
 
 export default function Button({
   text,
   link,
-  textColor,
-  borderColor,
-  backgroundColor
+  variant
 }: {
   text: string;
   link: string;
-  textColor: string;
-  borderColor: string;
-  backgroundColor: string;
+  variant: "black" | "yellow" | "yellow-line" | "white" | "clear";
 }) {
   return (
-    <Link
-      href={link}
-      className={styles.outerContainer}
-      style={{ borderColor: borderColor, backgroundColor: backgroundColor }}
-    >
-      <p className={styles.text} style={{ color: textColor }}>
-        {text}
-      </p>
+    <Link href={link} className={cx(styles.outerContainer, styles[variant])}>
+      <p className={styles.text}>{text}</p>
       <div className={styles.innerContainer}></div>
     </Link>
   );

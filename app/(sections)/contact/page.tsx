@@ -1,3 +1,5 @@
+// WIP
+import Button from "@/app/_components/Button";
 import Link from "next/link";
 
 export default function Work() {
@@ -44,7 +46,8 @@ export default function Work() {
               <Link href={"/privacy-policy"}>Privacy Policy</Link>
             </p>
           </div>
-          <input type="submit" value={"Send your message"}></input>
+
+          <Button text={"Send your message"} link={"#"} variant="yellow-line" />
         </form>
       </div>
     </main>

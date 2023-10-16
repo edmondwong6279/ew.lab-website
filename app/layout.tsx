@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 import cx from "classix";
 
-import "@/app/globals.css";
+import "@/styles/globals.css";
+import styles from "./root.module.scss";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({ weight: ["300", "400", "700"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "LAB",
@@ -21,13 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={cx(inter.className, "relative min-h-screen flex flex-col")}
-      >
+      <body className={cx(inter.className, styles.body)}>
         <NavBar theme="light" />
-        <div className="flex flex-auto flex-col justify-center items-center">
-          {children}
-        </div>
+        <div className={styles.outerContainer}>{children}</div>
         <Footer />
       </body>
     </html>

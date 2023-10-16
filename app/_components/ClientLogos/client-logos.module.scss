@@ -1,0 +1,50 @@
+@import "@/styles/variables.module.scss";
+
+.clientLogos {
+  @include pageContainer;
+  @include flexCol;
+  position: relative;
+  width: 100vw;
+  justify-content: space-between;
+  padding-bottom: 0;
+
+  @include desktop {
+    flex-direction: row;
+    padding-bottom: 73px;
+  }
+
+  .leftHand {
+    @include flexCol;
+    background-color: var(--lab-neon);
+    padding: 40px 23px;
+    width: 100%;
+    gap: 50px;
+
+    @include desktop {
+      padding: 120px 50px;
+      width: 45%;
+    }
+
+    .leftText {
+      @include lab-h3;
+      @include desktop {
+        font-size: 3.4375rem;
+        line-height: 65px;
+      }
+    }
+  }
+
+  .rightHand {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-block: 50px;
+
+    @include desktop {
+      width: 50%;
+      margin-block: 0;
+    }
+  }
+}
