@@ -5,8 +5,11 @@ import Button from "@/components/Button";
 import { usePositionInViewport, useWindowSize } from "@/hooks/index";
 
 import styles from "./feature-block.module.scss";
+import { calculateOpacity } from "@/utils/index";
+import { navBarHeight } from "@/constants/index";
 
 export default function FeatureBlock({
+  idx,
   title,
   subtitle,
   buttonText,
@@ -14,6 +17,7 @@ export default function FeatureBlock({
   backgroundImage,
   backgroundImageAlt
 }: {
+  idx: number;
   title: string;
   subtitle: string;
   buttonText: string;
@@ -21,20 +25,9 @@ export default function FeatureBlock({
   backgroundImage?: string;
   backgroundImageAlt?: string;
 }) {
-  const scrollPos = usePositionInViewport(title);
+  const scrollPos = usePositionInViewport(title, "outerContainer");
   const { height } = useWindowSize();
-
-  // opacity based on value of scrollPos and the height of the viewport
-  // divide by 3 to have a space between blocks that have no title
-  // just hard coded the navbar height for now, it's defined in @/styles/globals.css
-  const navBarHeight = 54;
-  const opacity = height
-    ? 1 -
-      Math.min(
-        Math.max(Math.abs((scrollPos - navBarHeight) / (height / 3)), 0),
-        1
-      )
-    : 0;
+  const opacity = calculateOpacity(height, scrollPos, navBarHeight);
 
   return (
     <div className={styles.outerContainer} id={title}>
@@ -54,6 +47,7 @@ export default function FeatureBlock({
               alt={backgroundImageAlt}
               src={backgroundImage}
               fill
+              priority
             />
           </div>
         )}

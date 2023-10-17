@@ -1,55 +1,21 @@
-// WIP
-import Button from "@/app/_components/Button";
-import Link from "next/link";
+import FeatureBlockStatic from "@/components/FeatureBlockStatic";
+import styles from "./contact.module.scss";
+import ContactForm from "@/components/ContactForm";
 
-export default function Work() {
+export default function Contact() {
   return (
-    <main className="flex flex-col items-center justify-between p-24">
-      <div>
-        <h1>Contact us</h1>
-        <p>
-          If you&apos;d like to discuss a potential project or collaboration,
-          please email hello&#64;lab.co.uk or call us on +44 &#40;0&#41;207 183
-          6668
-        </p>
+    <main className={styles.container}>
+      <div className={styles.form}>
+        <ContactForm />
       </div>
-      <div>
-        <form className="flex flex-col border-stone-950 border-solid border-4">
-          <label htmlFor="name-input">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name-input"
-            placeholder="Your full name"
-          ></input>
-          <label htmlFor="email-input">Email</label>
-          <input
-            type="text"
-            name="email"
-            id="email-input"
-            placeholder="me@company.com"
-          ></input>
-          <label htmlFor="message-input">Message</label>
-          <textarea
-            name="message"
-            id="message-input"
-            placeholder="Your message..."
-          ></textarea>
-          <div className="flex">
-            <input
-              type="checkbox"
-              name="privacy-checkbox"
-              id="privacy-checkbox-input"
-            ></input>
-            <p>
-              I agree to the terms of your{" "}
-              <Link href={"/privacy-policy"}>Privacy Policy</Link>
-            </p>
-          </div>
-
-          <Button text={"Send your message"} link={"#"} variant="yellow-line" />
-        </form>
-      </div>
+      <FeatureBlockStatic
+        title={"Teamsport"}
+        subtitle={"Moving to a performant composable platform"}
+        buttonText={"View Teamsport"}
+        buttonLink={"/work/teamsport"}
+        backgroundImage={"/FeatureBlocks/Teamsport.png"}
+        backgroundImageAlt={"Teamsport background image"}
+      />
     </main>
   );
 }

@@ -1,16 +1,13 @@
 @import "@/styles/variables.module.scss";
 
-.outerContainer {
-  @include scrollSnapContainer;
-  width: 100%;
-}
-
 .container {
   position: relative;
-  height: calc(100svh - var(--nav-bar-height));
+  min-height: calc(100svh - var(--nav-bar-height));
+  width: 100%;
 
   .backgroundFade {
     position: absolute;
+    top: 0;
     height: 100%;
     width: 100%;
     background: linear-gradient(
@@ -31,16 +28,11 @@
   @include flexCol;
   @include flexCenter;
   @include pageContainer;
-
-  position: fixed;
-  top: 0;
+  position: relative;
   z-index: 10;
-  left: 0;
-  right: 0;
-  margin: var(--nav-bar-height) auto;
-
-  gap: 20px;
   padding-top: 29px;
+  color: var(--white);
+  gap: 20px;
 
   @include tablet {
     padding-top: 48px;
@@ -49,12 +41,10 @@
   .heading {
     line-height: 57.5px;
     font-size: 2.5rem;
-    color: var(--white);
     font-weight: 400;
   }
 
   .subtitle {
-    color: var(--white);
     font-weight: 400;
     text-align: center;
   }

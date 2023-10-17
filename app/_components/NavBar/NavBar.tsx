@@ -27,19 +27,8 @@ export default function NavBar({ theme }: { theme: "light" | "dark" }) {
     }
   }, [viewIsMobile, size]);
 
-  // for freezing the body
-  if (typeof window !== "undefined") {
-    if (isHamburgerOpen) {
-      document.body.style.height = "100%";
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.height = "unset";
-      document.body.style.overflow = "unset";
-    }
-  }
-
   return (
-    <nav className={styles.container}>
+    <nav className={styles.container} id={"nav"}>
       <Link href={"/"}>
         {theme === "light" ? (
           <Image

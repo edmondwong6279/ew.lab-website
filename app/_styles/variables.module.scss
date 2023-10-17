@@ -79,7 +79,6 @@ $desktop: 1024px;
 }
 
 @mixin scrollSnapContainer {
-  scroll-margin-top: var(--nav-bar-height);
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }

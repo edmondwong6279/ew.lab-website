@@ -11,7 +11,7 @@ export default function ClientLogos() {
         <h1 className={styles.leftText}>
           Partering with brands that see the world differently
         </h1>
-        <Button text={"See our Work"} link={"#"} variant="clear" />
+        <Button text={"See our Work"} link={"/work"} variant="clear" />
       </div>
       <div className={styles.rightHand}>
         <Image

@@ -3,9 +3,4 @@
 .container {
   @include flexCol;
   @include flexCenter;
-
-  .form {
-    @include pageContainer;
-    width: 100%;
-  }
 }

@@ -5,6 +5,7 @@
   @include flexCol;
   position: relative;
   width: 100%;
+  height: 100%;
   justify-content: space-between;
   padding-bottom: 0;
 
@@ -18,11 +19,12 @@
     background-color: var(--lab-neon);
     padding: 40px 23px;
     width: 100%;
-    gap: 50px;
+    gap: 20px;
 
     @include desktop {
       padding: 120px 50px;
       width: 45%;
+      gap: 50px;
     }
 
     .leftText {

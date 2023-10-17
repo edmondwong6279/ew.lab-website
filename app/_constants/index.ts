@@ -1,3 +1,5 @@
+export const navBarHeight = 54;
+
 export const navArray = [
   { link: "/work", text: "Work" },
   { link: "/about", text: "About" },
@@ -5,7 +7,7 @@ export const navArray = [
 ];
 
 export const footerArray = [
-  { link: "/privacy-policy", text: "Privacy Policy" },
+  { link: "/privacy-policy", text: "Privacy Policy & Cookie Policy" },
   {
     link: "https://lab.co.uk/LAB.LEGAL.STAND-TSCS.04.02.pdf",
     text: "Terms & conditions"
@@ -13,13 +15,55 @@ export const footerArray = [
 ];
 
 export const projectsArray = [
-  { link: "superdry", text: "Superdry" },
-  { link: "isky", text: "iSky" },
-  { link: "hestia", text: "Hestia" },
-  { link: "neovest", text: "Neovest" },
-  { link: "teamsport", text: "Teamsport" },
-  { link: "tevva", text: "Tevva" },
-  { link: "hasbean", text: "Hasbean" }
+  {
+    link: "superdry",
+    text: "Superdry",
+    imageSrc: "/CaseStudy/Superdry.png",
+    imageAlt: "Image of case study",
+    subtitle: "A new mobile e-commerce experience for Superdry"
+  },
+  {
+    link: "isky",
+    text: "iSky",
+    imageSrc: "/CaseStudy/isky-mob.png",
+    imageAlt: "Image of case study",
+    subtitle: "Developing a digital intelligence platform for iSky"
+  },
+  {
+    link: "hestia",
+    text: "Hestia",
+    imageSrc: "/CaseStudy/Hestia.png",
+    imageAlt: "Image of case study",
+    subtitle: "Redesigning Hestia's app to be more supportive"
+  },
+  {
+    link: "neovest",
+    text: "Neovest",
+    imageSrc: "/CaseStudy/Neovest.png",
+    imageAlt: "Image of case study",
+    subtitle: "Transforming Neovest's digital experience for traders"
+  },
+  {
+    link: "teamsport",
+    text: "Teamsport",
+    imageSrc: "/CaseStudy/Teamsport.png",
+    imageAlt: "Image of case study",
+    subtitle: "A new winning booking experience for Teamsport"
+  },
+  {
+    link: "tevva",
+    text: "Tevva",
+    imageSrc: "/CaseStudy/Tevva.png",
+    imageAlt: "Image of case study",
+    subtitle: "Launching Tevva into the hydrogen electric truck market"
+  },
+  {
+    link: "hasbean",
+    text: "Hasbean",
+    imageSrc: "/CaseStudy/Hasbean.png",
+    imageAlt: "Image of case study",
+    subtitle: "A new Shopify e-commerce experience for Hasbean"
+  }
 ];
 
 export const homeFeatures = [
@@ -35,7 +79,7 @@ export const homeFeatures = [
     title: "Teamsport",
     subtitle: "Moving to a performant composable platform",
     buttonText: "View Teamsport",
-    buttonLink: "/work/superdry",
+    buttonLink: "/work/teamsport",
     backgroundImage: "/FeatureBlocks/Teamsport.png",
     backgroundImageAlt: "Teamsport background image"
   },
@@ -43,7 +87,7 @@ export const homeFeatures = [
     title: "Neovest",
     subtitle: "Refreshing the brand and website for a global hedgfund",
     buttonText: "View Neovest",
-    buttonLink: "/work/superdry",
+    buttonLink: "/work/neovest",
     backgroundImage: "/FeatureBlocks/Neovest.png",
     backgroundImageAlt: "Neovest background image"
   },
@@ -51,7 +95,7 @@ export const homeFeatures = [
     title: "Hestia",
     subtitle: "Designing for empathy",
     buttonText: "View Hestia",
-    buttonLink: "/work/superdry",
+    buttonLink: "/work/hestia",
     backgroundImage: "/FeatureBlocks/Hestia.png",
     backgroundImageAlt: "Hestia background image"
   },
@@ -59,7 +103,7 @@ export const homeFeatures = [
     title: "Tevva",
     subtitle: "Launching Tevva's Hydrogen Electric Truck brand",
     buttonText: "View Tevva",
-    buttonLink: "/work/superdry",
+    buttonLink: "/work/tevva",
     backgroundImage: "/FeatureBlocks/Tevva.png",
     backgroundImageAlt: "Tevva background image"
   }

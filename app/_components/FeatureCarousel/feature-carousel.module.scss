@@ -29,22 +29,20 @@
 
 .featureText {
   @include flexCol;
-  @include flexCenter;
-  @include pageContainer;
-
   position: fixed;
   top: 0;
+  color: blue;
   z-index: 10;
   left: 0;
   right: 0;
-  margin: var(--nav-bar-height) auto;
+  margin: 0 auto;
 
+  z-index: 10;
   gap: 20px;
-  padding-top: 29px;
-
-  @include tablet {
-    padding-top: 48px;
-  }
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+  margin-block: var(--nav-bar-height);
 
   .heading {
     line-height: 57.5px;
@@ -56,6 +54,5 @@
   .subtitle {
     color: var(--white);
     font-weight: 400;
-    text-align: center;
   }
 }

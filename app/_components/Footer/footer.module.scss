@@ -1,15 +1,49 @@
+@import "@/styles/variables.module.scss";
+
 .footer {
-  display: flex;
-  height: var(--footer-height);
+  @include pageContainer;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: var(--footer-height-mobile);
+  min-height: var(--footer-height-mobile);
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 80px;
-
+  font-weight: 300;
   background-color: var(--lab-black);
   color: var(--white);
 
+  @include tablet {
+    display: flex;
+    min-height: var(--footer-height);
+    height: var(--footer-height);
+  }
+
+  .item {
+    width: 100%;
+
+    @include tablet {
+      width: unset;
+    }
+  }
+
+  .accreditation {
+    @include flexCenter;
+
+    grid-row: 3/4;
+  }
+
+  .social {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
   .links {
+    grid-row: 2/3;
+
     .link {
       padding-inline: 20px;
     }

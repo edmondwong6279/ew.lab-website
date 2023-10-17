@@ -28,34 +28,23 @@ export const useWindowSize = () => {
   return windowSize;
 };
 
-export const useScrollPosition = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const updatePosition = () => {
-      setScrollPosition(window.scrollY);
-    };
-    window.addEventListener("scroll", updatePosition);
-    updatePosition();
-    return () => window.removeEventListener("scroll", updatePosition);
-  }, []);
-
-  return scrollPosition;
-};
-
-export const usePositionInViewport = (elementId: string) => {
+export const usePositionInViewport = (elementId: string, parentId: string) => {
   const [positionInViewPort, setPositionInViewPort] = useState(0);
 
   useEffect(() => {
     const updatePosition = () => {
       const pos =
         document.getElementById(elementId)?.getBoundingClientRect().top ?? 0;
+
       setPositionInViewPort(pos);
     };
-    window.addEventListener("scroll", updatePosition);
+
+    document
+      .getElementById(parentId)
+      ?.addEventListener("scroll", updatePosition);
     updatePosition();
     return () => window.removeEventListener("scroll", updatePosition);
-  }, [elementId]);
+  }, [elementId, parentId]);
 
   return positionInViewPort;
 };

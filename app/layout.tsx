@@ -24,8 +24,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={cx(inter.className, styles.body)}>
         <NavBar theme="light" />
-        <div className={styles.outerContainer}>{children}</div>
-        <Footer />
+        <div className={styles.outerContainer} id={"outerContainer"}>
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

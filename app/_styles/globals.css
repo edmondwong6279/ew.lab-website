@@ -10,13 +10,10 @@
   --black: #000;
   --nav-bar-height: 54px;
   --nav-bar-height-negative: -54px;
-  --footer-height: 69px
+  --footer-height: 69px;
+  --footer-height-mobile: 166px
 }
 
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
 
 body {
   color: var(--lab-black);
@@ -27,6 +24,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   position: relative;
-  min-height: 100vh;
+  min-height: 100svh;
 }
 

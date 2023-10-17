@@ -1,0 +1,17 @@
+@import "@/styles/variables.module.scss";
+
+.container {
+  // @include flexCol;
+  // position: fixed;
+  // top: 0;
+  // bottom: 0;
+  z-index: 10;
+  // right: 37px;
+  // margin: auto;
+  // height: fit-content;
+  // gap: 10px;
+
+  border-right-style: solid;
+  border-right-width: 5px;
+  min-height: 37px;
+}

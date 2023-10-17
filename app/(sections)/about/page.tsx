@@ -1,30 +1,33 @@
-// WIP
-import Accordion from "@/components/Accordion";
-import ArrowDown from "@/components/ArrowDown";
-import Button from "@/components/Button";
-import ClientLogos from "@/components/ClientLogos";
-import PageTitle from "@/components/PageTitle";
-
 import styles from "./about.module.scss";
+import Hero from "@/app/_components/Hero";
+import ContactForm from "@/app/_components/ContactForm";
+import ClientLogos from "@/app/_components/ClientLogos";
+import FeatureBlockStatic from "@/app/_components/FeatureBlockStatic";
 
 export default function Work() {
   return (
     <main className={styles.container}>
-      <PageTitle title="Hasbean" />
-      <PageTitle
-        title="Combining the right expertise to deliver new approaches and lasting impact"
-        variant="work"
+      <Hero
+        heroId={"0"}
+        text={"Unlocking magic with insight-led design and technology."}
+        buttonText={"Get in touch"}
+        buttonLink={"#contact"}
+        imageLink={"/About-Hero.png"}
+        imageAlt={"About image"}
+        arrow={false}
       />
-      <div className={styles.buttonContainer}>
-        <Button text={"See our Work"} link="/" variant="black" />
-        <Button text={"See our Work"} link="/" variant="clear" />
-        <Button text={"See our Work"} link="/" variant="white" />
-        <Button text={"See our Work"} link="/" variant="yellow" />
-        <Button text={"See our Work"} link="/" variant="yellow-line" />
-      </div>
-      <ArrowDown anchor={"#"} />
-      {/* <Accordion /> */}
+      <h1>TODO block of text</h1>
+      <h1>TODO accordion and image</h1>
       <ClientLogos />
+      <FeatureBlockStatic
+        title={"Superdry"}
+        subtitle={"Redesigning the mobile e-commerce experience"}
+        buttonText={"View Superdry"}
+        buttonLink={"/work/superdry"}
+        backgroundImage={"/FeatureBlocks/Superdry.png"}
+        backgroundImageAlt={"Superdry background image"}
+      />
+      <ContactForm />
     </main>
   );
 }

@@ -1,0 +1,60 @@
+@import "@/styles/variables.module.scss";
+
+.hero {
+  @include flexCenter;
+  @include pageContainer;
+  position: relative;
+  height: calc(100svh - var(--nav-bar-height));
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  &.scrollSnap {
+    @include scrollSnapContainer;
+  }
+
+  .textContainer {
+    @include flexCol;
+    padding-right: 0;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    height: fit-content;
+
+    @include tablet {
+      width: 40%;
+      margin-top: 0;
+    }
+
+    .text {
+      @include lab-h1;
+      padding-bottom: 20px;
+
+      @include tablet {
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  .image {
+    height: 100%;
+    right: 0;
+    object-fit: cover;
+    z-index: -10;
+    width: 100%;
+    max-height: 45%;
+
+    @include tablet {
+      object-fit: contain;
+      width: 60%;
+      max-height: unset;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 96px;
+  }
+}
