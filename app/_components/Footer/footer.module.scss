@@ -10,10 +10,11 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 300;
+  font-size: 0.75rem;
   background-color: var(--lab-black);
   color: var(--white);
 
-  @include tablet {
+  @include desktop {
     display: flex;
     min-height: var(--footer-height);
     height: var(--footer-height);
@@ -22,21 +23,22 @@
   .item {
     width: 100%;
 
-    @include tablet {
+    @include desktop {
       width: unset;
     }
   }
 
   .accreditation {
-    @include flexCenter;
-
+    display: flex;
+    align-items: center;
+    gap: 10px;
     grid-row: 3/4;
   }
 
   .social {
     display: none;
 
-    @include tablet {
+    @include desktop {
       display: block;
     }
   }

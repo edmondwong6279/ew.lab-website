@@ -29,6 +29,10 @@
   .title {
     @include lab-h1;
   }
+
+  .buttonContainer {
+    width: 145px;
+  }
 }
 
 .container {
@@ -99,7 +103,7 @@
     overflow: hidden;
     height: calc(100svh - var(--nav-bar-height) - var(--footer-height-mobile));
 
-    @include tablet {
+    @include desktop {
       height: calc(100svh - var(--nav-bar-height) - var(--footer-height));
     }
   }

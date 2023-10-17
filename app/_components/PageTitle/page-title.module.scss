@@ -12,7 +12,7 @@
   &.work {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: var(--black);
+    background-color: var(--lab-black);
 
     @include tablet {
       padding-top: 64px;
@@ -28,8 +28,13 @@
     }
 
     &.default {
-      padding-top: 80px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       color: var(--black);
+
+      @include tablet {
+        padding-top: 80px;
+      }
     }
 
     &.work {

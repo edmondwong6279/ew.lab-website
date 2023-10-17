@@ -1,0 +1,23 @@
+@import "@/styles/variables.module.scss";
+
+.container {
+  @include pageContainer;
+  color: var(--black);
+  font-weight: 300;
+  line-height: 32px;
+  width: 100%;
+  align-self: start;
+
+  @include tablet {
+    padding-right: 0;
+    width: 59%;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}

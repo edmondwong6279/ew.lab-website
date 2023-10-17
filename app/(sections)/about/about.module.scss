@@ -7,11 +7,68 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
 
-.buttonContainer {
-  @include flexCol;
-  gap: 10px;
-  padding: 10px;
-  background-color: gray;
+  .whatWeDo {
+    @include pageContainer;
+    width: 100%;
+    background-color: var(--lab-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include tablet {
+      flex-direction: row;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .accordionContainer {
+      width: 100%;
+
+      @include tablet {
+        width: 40%;
+      }
+    }
+
+    .imageContainer {
+      position: relative;
+      width: 100%;
+
+      @include tablet {
+        width: 40%;
+      }
+
+      .image {
+        right: 0;
+        object-fit: cover;
+        z-index: -10;
+        width: 100%;
+
+        @include tablet {
+          object-fit: contain;
+        }
+      }
+    }
+
+    // .image {
+    //   height: 100%;
+    //   right: 0;
+    //   object-fit: cover;
+    //   // z-index: 10;
+    //   width: 100%;
+    //   max-height: 45%;
+
+    //   @include tablet {
+    //     object-fit: contain;
+    //     width: 60%;
+    //     max-height: unset;
+    //   }
+    // }
+  }
+
+  .clientLogoContainer {
+    margin-top: 60px;
+  }
 }

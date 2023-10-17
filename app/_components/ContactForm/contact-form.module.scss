@@ -1,1 +1,102 @@
 @import "@/styles/variables.module.scss";
+
+.container {
+  @include pageContainer;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "form"
+    "info";
+
+  width: 100%;
+  padding-top: 34px;
+  padding-bottom: 30px;
+  background-color: var(--lab-black);
+  color: var(--white);
+
+  @include tablet {
+    padding-top: 67px;
+    padding-bottom: 81px;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-template:
+      "title form" 90px
+      "info form" auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .title {
+    @include lab-h1;
+    grid-area: title;
+  }
+
+  .sentInfo {
+    @include flexCol;
+    gap: 30px;
+    grid-area: info;
+  }
+
+  .info {
+    grid-area: info;
+    align-self: flex-start;
+    width: 100%;
+    padding-top: 20px;
+
+    @include tablet {
+      width: 80%;
+      padding-top: 0;
+    }
+  }
+
+  .sentButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .form {
+    @include flexCol;
+    gap: 10px;
+    grid-area: form;
+
+    @include tablet {
+      padding-right: 9%;
+    }
+    .field {
+      @include flexCol;
+      background-color: var(--lab-black);
+
+      input[type="text"],
+      textarea {
+        background-color: var(--lab-black);
+        border: 1px solid var(--white);
+        height: 48px;
+        padding: 10px 12px;
+      }
+
+      .textArea {
+        height: 100px;
+        resize: none;
+      }
+    }
+
+    .checkboxField {
+      display: flex;
+      gap: 8px;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    textarea:focus,
+    input:focus {
+      outline: none;
+    }
+
+    .buttonContainer {
+      width: 200px;
+    }
+  }
+}

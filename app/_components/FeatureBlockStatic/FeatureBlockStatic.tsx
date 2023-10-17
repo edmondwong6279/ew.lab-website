@@ -23,7 +23,9 @@ export default function FeatureBlockStatic({
       <div className={styles.featureText}>
         <h1 className={styles.heading}>{title}</h1>
         <h5 className={styles.subtitle}>{subtitle}</h5>
-        <Button text={buttonText} link={buttonLink} variant="white" />
+        <div className={styles.buttonContainer}>
+          <Button text={buttonText} link={buttonLink} variant="white" />
+        </div>
       </div>
       {backgroundImage && backgroundImageAlt && (
         <div className={styles.backgroundFade}>

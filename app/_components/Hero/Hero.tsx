@@ -30,7 +30,9 @@ export default function Hero({
     >
       <div className={styles.textContainer}>
         <h1 className={styles.text}>{text}</h1>
-        <Button text={buttonText} link={buttonLink} variant="clear" />
+        <div className={styles.buttonContainer}>
+          <Button text={buttonText} link={buttonLink} variant="clear" />
+        </div>
       </div>
       <Image
         className={styles.image}
@@ -38,7 +40,6 @@ export default function Hero({
         alt={imageAlt}
         height={800}
         width={740}
-        priority
       />
       {arrow && (
         <div className={styles.arrow}>

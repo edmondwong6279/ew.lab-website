@@ -18,49 +18,49 @@ export const projectsArray = [
   {
     link: "superdry",
     text: "Superdry",
-    imageSrc: "/CaseStudy/Superdry.png",
+    imageSrc: "/WorkLanding/Superdry.png",
     imageAlt: "Image of case study",
     subtitle: "A new mobile e-commerce experience for Superdry"
   },
   {
     link: "isky",
     text: "iSky",
-    imageSrc: "/CaseStudy/isky-mob.png",
+    imageSrc: "/WorkLanding/isky.png",
     imageAlt: "Image of case study",
     subtitle: "Developing a digital intelligence platform for iSky"
   },
   {
     link: "hestia",
     text: "Hestia",
-    imageSrc: "/CaseStudy/Hestia.png",
+    imageSrc: "/WorkLanding/Hestia.png",
     imageAlt: "Image of case study",
     subtitle: "Redesigning Hestia's app to be more supportive"
   },
   {
     link: "neovest",
     text: "Neovest",
-    imageSrc: "/CaseStudy/Neovest.png",
+    imageSrc: "/WorkLanding/Neovest.png",
     imageAlt: "Image of case study",
     subtitle: "Transforming Neovest's digital experience for traders"
   },
   {
     link: "teamsport",
     text: "Teamsport",
-    imageSrc: "/CaseStudy/Teamsport.png",
+    imageSrc: "/WorkLanding/Teamsport.png",
     imageAlt: "Image of case study",
     subtitle: "A new winning booking experience for Teamsport"
   },
   {
     link: "tevva",
     text: "Tevva",
-    imageSrc: "/CaseStudy/Tevva.png",
+    imageSrc: "/WorkLanding/Tevva.png",
     imageAlt: "Image of case study",
     subtitle: "Launching Tevva into the hydrogen electric truck market"
   },
   {
     link: "hasbean",
     text: "Hasbean",
-    imageSrc: "/CaseStudy/Hasbean.png",
+    imageSrc: "/WorkLanding/Hasbean.png",
     imageAlt: "Image of case study",
     subtitle: "A new Shopify e-commerce experience for Hasbean"
   }

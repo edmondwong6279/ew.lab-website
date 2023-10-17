@@ -8,7 +8,10 @@ import styles from "./root.module.scss";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
-const inter = Poppins({ weight: ["300", "400", "700"], subsets: ["latin"] });
+const inter = Poppins({
+  weight: ["300", "400", "600", "700"],
+  subsets: ["latin"]
+});
 
 export const metadata: Metadata = {
   title: "LAB",

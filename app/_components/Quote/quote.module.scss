@@ -1,0 +1,27 @@
+@import "@/styles/variables.module.scss";
+
+.container {
+  @include pageContainer;
+  @include flexCenter;
+  font-size: 1.875rem;
+  line-height: 3.125rem;
+
+  .innerContainer {
+    padding-top: 60px;
+    padding-bottom: 27px;
+
+    width: 100%;
+
+    @include tablet {
+      width: 81%;
+    }
+
+    .quote {
+      margin-bottom: 1.875rem;
+    }
+
+    .author {
+      font-weight: 600;
+    }
+  }
+}

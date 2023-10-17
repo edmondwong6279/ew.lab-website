@@ -5,9 +5,8 @@ import ContactForm from "@/components/ContactForm";
 export default function Contact() {
   return (
     <main className={styles.container}>
-      <div className={styles.form}>
-        <ContactForm />
-      </div>
+      <ContactForm />
+
       <FeatureBlockStatic
         title={"Teamsport"}
         subtitle={"Moving to a performant composable platform"}

@@ -3,7 +3,7 @@
 .outerContainer {
   display: flex;
   height: 50px;
-  width: 150px;
+  width: 100%;
   border-width: 1px;
   border-style: solid;
   overflow: hidden;
@@ -23,8 +23,11 @@
     position: absolute;
     background-color: var(--lab-neon);
     transition: 0.3s ease-out;
-    height: 155px;
-    width: 155px;
+
+    // keep the animation as a uniform circle
+    height: auto;
+    width: 120%;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     opacity: 0;
     transform: scale(0);

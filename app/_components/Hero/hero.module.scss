@@ -22,10 +22,12 @@
     width: 100%;
     margin-top: 30px;
     height: fit-content;
+    padding-bottom: 30px;
 
     @include tablet {
       width: 40%;
       margin-top: 0;
+      padding-bottom: 0;
     }
 
     .text {
@@ -35,6 +37,10 @@
       @include tablet {
         padding-bottom: 40px;
       }
+    }
+
+    .buttonContainer {
+      width: 160px;
     }
   }
 

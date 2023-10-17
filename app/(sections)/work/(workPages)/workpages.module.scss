@@ -1,0 +1,17 @@
+@import "@/styles/variables.module.scss";
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+
+  .image {
+    right: 0;
+    object-fit: cover;
+    z-index: -10;
+    width: 100%;
+
+    @include tablet {
+      object-fit: contain;
+    }
+  }
+}

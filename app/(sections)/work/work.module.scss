@@ -5,7 +5,7 @@
   @include pageContainer;
 
   position: relative;
-  background-color: var(--black);
+  background-color: var(--lab-black);
   display: flex;
 
   @include tablet {

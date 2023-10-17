@@ -1,7 +1,5 @@
-// WIP
 import PageTitle from "@/components/PageTitle";
 import { projectsArray } from "@/constants/index";
-import Link from "next/link";
 import styles from "./work.module.scss";
 import WorkCaseStudy from "@/components/WorkCaseStudy";
 import Button from "@/components/Button";

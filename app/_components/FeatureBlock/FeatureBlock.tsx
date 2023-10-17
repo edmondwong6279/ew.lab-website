@@ -37,7 +37,9 @@ export default function FeatureBlock({
       >
         <h1 className={styles.heading}>{title}</h1>
         <h5 className={styles.subtitle}>{subtitle}</h5>
-        <Button text={buttonText} link={buttonLink} variant="white" />
+        <div className={styles.buttonContainer}>
+          <Button text={buttonText} link={buttonLink} variant="white" />
+        </div>
       </div>
       <section className={styles.container}>
         {backgroundImage && backgroundImageAlt && (
