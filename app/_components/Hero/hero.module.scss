@@ -2,13 +2,14 @@
 
 .hero {
   @include flexCenter;
-  @include pageContainer;
   position: relative;
   height: calc(100svh - var(--nav-bar-height));
   flex-direction: column;
+  justify-content: space-between;
 
   @include tablet {
     flex-direction: row;
+    justify-content: center;
   }
 
   &.scrollSnap {
@@ -16,13 +17,14 @@
   }
 
   .textContainer {
+    @include pageContainer;
     @include flexCol;
     padding-right: 0;
     justify-content: center;
     width: 100%;
     margin-top: 30px;
     height: fit-content;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 
     @include tablet {
       width: 40%;
@@ -50,17 +52,19 @@
     object-fit: cover;
     z-index: -10;
     width: 100%;
-    max-height: 45%;
 
     @include tablet {
-      object-fit: contain;
       width: 60%;
-      max-height: unset;
+      object-position: left;
     }
   }
 
   .arrow {
     position: absolute;
-    bottom: 96px;
+    bottom: 37px;
+
+    @include tablet {
+      bottom: 96px;
+    }
   }
 }

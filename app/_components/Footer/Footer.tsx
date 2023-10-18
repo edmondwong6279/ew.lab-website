@@ -10,7 +10,18 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.item}>&copy;2023 LAB. All rights reserved.</div>
-      <div className={styles.social}>Follow us:</div>
+      <div className={styles.social}>
+        Follow us:{" "}
+        <a href="https://www.linkedin.com/company/labgroupdigital/">
+          <Image
+            width={54}
+            height={54}
+            src={"/linkedin.png"}
+            alt="Linkedin icon"
+            unoptimized
+          />
+        </a>
+      </div>
       <div className={cx(styles.accreditation, styles.item)}>
         Accreditation:{" "}
         <Image
@@ -18,6 +29,7 @@ export default function Footer() {
           height={54}
           src={"/accreditation.png"}
           alt="Accreditation icons"
+          unoptimized
         />
       </div>
       <div className={cx(styles.links, styles.item)}>

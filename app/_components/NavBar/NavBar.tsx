@@ -35,7 +35,7 @@ export default function NavBar({ theme }: { theme: "light" | "dark" }) {
             priority
             src={"/LogoBlack.svg"}
             width={80}
-            height={28}
+            height={34}
             alt="LAB Logo"
           />
         ) : (
