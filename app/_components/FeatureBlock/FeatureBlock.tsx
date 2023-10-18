@@ -33,7 +33,9 @@ export default function FeatureBlock({
     <div className={styles.outerContainer} id={title}>
       <div
         className={styles.featureText}
-        style={{ opacity, pointerEvents: opacity === 1 ? "auto" : "none" }}
+        // We expect opacity to reach 1.0 but the calculation on mobile
+        // gives 0.9998, so we set 0.9 as the threshold
+        style={{ opacity, pointerEvents: opacity > 0.9 ? "auto" : "none" }}
       >
         <h1 className={styles.heading}>{title}</h1>
         <h5 className={styles.subtitle}>{subtitle}</h5>
