@@ -16,8 +16,9 @@ export default function ClientLogos() {
       <div className={styles.rightHand}>
         <Image
           src={"/ClientLogos.svg"}
-          width={584}
-          height={325}
+          fill
+          // width={584}
+          // height={325}
           alt="Grid of client logos: Superdry, Carter Jones, giffgaff, Danone, Tevva, Neovest, Opayo, Hestia, Hasbean"
         />
       </div>

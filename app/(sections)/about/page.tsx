@@ -43,13 +43,6 @@ export default function About() {
             height={760}
             alt="About what we do background image"
           />
-          {/* <picture>
-            <img
-              className={styles.image}
-              src="About-WhatWeDo.png"
-              alt="About what we do background image"
-            />
-          </picture> */}
         </div>
       </div>
       <div className={styles.clientLogoContainer}>

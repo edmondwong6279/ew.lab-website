@@ -18,11 +18,12 @@
     @include flexCol;
     background-color: var(--lab-neon);
     padding: 40px 23px;
+    justify-content: center;
     width: 100%;
     gap: 20px;
 
     @include desktop {
-      padding: 120px 50px;
+      padding: 0 50px;
       width: 45%;
       gap: 50px;
     }
@@ -42,11 +43,16 @@
     justify-content: center;
     align-content: center;
     width: 100%;
-    margin-block: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 0;
+    flex: 1;
 
     @include desktop {
       width: 50%;
-      margin-block: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 90px;
     }
   }
 }
