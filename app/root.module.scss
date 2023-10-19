@@ -103,6 +103,12 @@
     overflow: hidden;
     height: calc(100svh - var(--nav-bar-height) - var(--footer-height-mobile));
 
+    @include tablet {
+      height: calc(
+        100svh - var(--nav-bar-height) - var(--footer-height-tablet)
+      );
+    }
+
     @include desktop {
       height: calc(100svh - var(--nav-bar-height) - var(--footer-height));
     }

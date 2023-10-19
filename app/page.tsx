@@ -1,8 +1,3 @@
-// WIP
-import Image from "next/image";
-
-import Button from "@/components/Button";
-import ArrowDown from "@/components/ArrowDown";
 import ClientLogos from "@/components/ClientLogos";
 import FeatureCarousel from "@/components/FeatureCarousel";
 

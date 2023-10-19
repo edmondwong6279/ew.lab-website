@@ -40,6 +40,7 @@ export default function Hero({
         alt={imageAlt}
         height={800}
         width={740}
+        priority
       />
       {arrow && (
         <div className={styles.arrow}>

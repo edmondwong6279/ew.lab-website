@@ -17,7 +17,14 @@ export default function WorkCaseStudy({
   button: React.ReactNode;
 }) {
   return (
-    <div className={cx(styles.container, styles[`position-${idx % 4}`])}>
+    <div
+      key={idx}
+      className={cx(
+        styles.container,
+        styles[`col-pos-${idx % 4}`],
+        styles[`row-pos-${idx}`]
+      )}
+    >
       <Image
         className={styles.image}
         src={imageSrc}
@@ -26,7 +33,7 @@ export default function WorkCaseStudy({
         alt={imageAlt}
       />
       <h5>{text}</h5>
-      {button}
+      <div className={styles.buttonContainer}>{button}</div>
     </div>
   );
 }

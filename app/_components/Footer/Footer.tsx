@@ -14,22 +14,21 @@ export default function Footer() {
         Follow us:{" "}
         <a href="https://www.linkedin.com/company/labgroupdigital/">
           <Image
-            width={54}
-            height={54}
-            src={"/linkedin.png"}
+            width={39}
+            height={38}
+            src={"/linkedin.svg"}
             alt="Linkedin icon"
-            unoptimized
           />
         </a>
       </div>
       <div className={cx(styles.accreditation, styles.item)}>
         Accreditation:{" "}
         <Image
-          width={115}
-          height={54}
+          className={styles.image}
+          width={95}
+          height={45}
           src={"/accreditation.png"}
           alt="Accreditation icons"
-          unoptimized
         />
       </div>
       <div className={cx(styles.links, styles.item)}>

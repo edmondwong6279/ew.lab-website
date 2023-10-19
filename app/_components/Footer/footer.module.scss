@@ -3,21 +3,36 @@
 .footer {
   @include pageContainer;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-areas:
+    "copyright copyright"
+    "accred social"
+    "privacy privacy";
   height: var(--footer-height-mobile);
   min-height: var(--footer-height-mobile);
   width: 100%;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   font-weight: 300;
   font-size: 0.75rem;
   background-color: var(--lab-black);
   color: var(--white);
+  gap: 0 40px;
+
+  @include tablet {
+    grid-template-areas:
+      "copyright privacy"
+      "accred social";
+    gap: 0 40px;
+    height: var(--footer-height-tablet);
+    min-height: var(--footer-height-tablet);
+  }
 
   @include desktop {
+    justify-content: space-between;
     display: flex;
     min-height: var(--footer-height);
     height: var(--footer-height);
+    gap: 0;
   }
 
   .item {
@@ -33,20 +48,26 @@
     align-items: center;
     gap: 10px;
     grid-row: 3/4;
+    grid-area: accred;
+
+    .image {
+      width: 81px;
+      @include desktop {
+        width: 95px;
+      }
+    }
   }
 
   .social {
-    display: none;
-
-    @include desktop {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-area: social;
   }
 
   .links {
     grid-row: 2/3;
+    grid-area: privacy;
 
     .link {
       padding-inline: 20px;

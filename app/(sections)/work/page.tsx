@@ -13,22 +13,20 @@ export default function Work() {
       />
       <div className={styles.workList}>
         {projectsArray.map(({ link, text, imageSrc, subtitle }, idx) => (
-          <>
-            <WorkCaseStudy
-              key={idx}
-              idx={idx}
-              imageSrc={imageSrc}
-              imageAlt={"asdasdf"}
-              text={subtitle}
-              button={
-                <Button
-                  text={`See ${text}`}
-                  link={`/work/${link}`}
-                  variant={"white"}
-                />
-              }
-            />
-          </>
+          <WorkCaseStudy
+            key={idx}
+            idx={idx}
+            imageSrc={imageSrc}
+            imageAlt={"asdasdf"}
+            text={subtitle}
+            button={
+              <Button
+                text={`See ${text}`}
+                link={`/work/${link}`}
+                variant={"white"}
+              />
+            }
+          />
         ))}
       </div>
     </main>
