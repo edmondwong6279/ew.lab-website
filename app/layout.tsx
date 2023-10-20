@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-
 import cx from "classix";
+
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 import "@/styles/globals.css";
 import styles from "./root.module.scss";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
 
 const inter = Poppins({
   weight: ["300", "400", "600", "700"],

@@ -9,7 +9,7 @@ export default function Home() {
     <main className={styles.container}>
       <Hero
         heroId={"hero"}
-        text={"Delivering insight-led, impactful digital experiences."}
+        text={"Insight-led, impactful digital experiences."}
         buttonText={"See our work"}
         buttonLink={"/work"}
         imageLink={"/RiverrHero-Image.png"}

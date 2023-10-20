@@ -31,6 +31,8 @@
       content: "+";
       position: absolute;
       right: 0;
+      font-size: 2rem;
+      font-weight: 300;
     }
   }
 
@@ -39,6 +41,11 @@
   }
 
   summary {
+    @include lab-h4;
+  }
+
+  ul {
     @include lab-body;
+    padding: 20px 0;
   }
 }

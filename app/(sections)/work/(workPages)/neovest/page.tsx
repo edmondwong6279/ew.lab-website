@@ -1,9 +1,6 @@
-import Image from "next/image";
-
 import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
-import Quote from "@/components/Quote";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
 
 import styles from "../workpages.module.scss";

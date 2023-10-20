@@ -6,6 +6,7 @@
   height: calc(100svh - var(--nav-bar-height));
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 
   @include tablet {
     flex-direction: row;
@@ -19,6 +20,7 @@
   .textContainer {
     @include pageContainer;
     @include flexCol;
+    position: relative;
     padding-right: 0;
     justify-content: center;
     width: 100%;
@@ -34,15 +36,22 @@
 
     .text {
       @include lab-h1;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
 
       @include tablet {
-        padding-bottom: 40px;
+        padding-bottom: 10px;
       }
     }
 
     .buttonContainer {
-      width: 160px;
+      width: fit-content;
+      position: absolute;
+      bottom: -50px;
+      // padding-bottom: 5px;
+      @include tablet {
+        position: relative;
+        bottom: unset;
+      }
     }
   }
 

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";

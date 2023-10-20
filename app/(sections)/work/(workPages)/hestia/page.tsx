@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
@@ -63,12 +61,12 @@ export default function Hestia() {
         author={"Rachel Misra, Head of Digital"}
       />
       <FeatureBlockStatic
-        title={"Teamsport"}
-        subtitle={"Moving to a performant composable platform"}
-        buttonText={"View Teamsport"}
-        buttonLink={"/work/teamsport"}
-        backgroundImage={"/FeatureBlocks/Teamsport.png"}
-        backgroundImageAlt={"Teamsport background image"}
+        title={"Superdry"}
+        subtitle={"Redesigning the mobile e-commerce experience"}
+        buttonText={"View Superdry"}
+        buttonLink={"/work/superdry"}
+        backgroundImage={"/FeatureBlocks/Superdry.png"}
+        backgroundImageAlt={"Superdry background image"}
       />
     </>
   );
