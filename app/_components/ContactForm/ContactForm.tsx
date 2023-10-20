@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 
 import Button from "@/components/Button";
 
 import styles from "./contact-form.module.scss";
-import { useState } from "react";
 
 export default function ContactForm() {
   const [showForm, setShowForm] = useState(true);

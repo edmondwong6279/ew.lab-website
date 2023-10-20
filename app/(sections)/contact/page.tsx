@@ -1,6 +1,8 @@
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
-import styles from "./contact.module.scss";
 import ContactForm from "@/components/ContactForm";
+import TeamsportImage from "@/public/FeatureBlocks/Teamsport.png";
+
+import styles from "./contact.module.scss";
 
 export default function Contact() {
   return (
@@ -12,7 +14,7 @@ export default function Contact() {
         subtitle={"Moving to a performant composable platform"}
         buttonText={"View Teamsport"}
         buttonLink={"/work/teamsport"}
-        backgroundImage={"/FeatureBlocks/Teamsport.png"}
+        backgroundImage={TeamsportImage}
         backgroundImageAlt={"Teamsport background image"}
       />
     </main>

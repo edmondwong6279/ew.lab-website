@@ -1,10 +1,12 @@
 import Link from "next/link";
-
-import { footerArray } from "@/constants/index";
-
-import styles from "./footer.module.scss";
 import Image from "next/image";
 import cx from "classix";
+
+import { footerArray } from "@/constants/index";
+import AccreditationImage from "@/public/accreditation.png";
+import LinkedinImage from "@/public/linkedin.svg";
+
+import styles from "./footer.module.scss";
 
 export default function Footer() {
   return (
@@ -16,7 +18,7 @@ export default function Footer() {
           <Image
             width={39}
             height={38}
-            src={"/linkedin.svg"}
+            src={LinkedinImage}
             alt="Linkedin icon"
           />
         </a>
@@ -27,7 +29,7 @@ export default function Footer() {
           className={styles.image}
           width={95}
           height={45}
-          src={"/accreditation.png"}
+          src={AccreditationImage}
           alt="Accreditation icons"
         />
       </div>

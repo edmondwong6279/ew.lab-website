@@ -3,6 +3,7 @@ import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import Quote from "@/components/Quote";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
+import TeamsportImage from "@/public/FeatureBlocks/Teamsport.png";
 
 import styles from "../workpages.module.scss";
 
@@ -71,7 +72,7 @@ export default function Superdry() {
         subtitle={"Moving to a performant composable platform"}
         buttonText={"View Teamsport"}
         buttonLink={"/work/teamsport"}
-        backgroundImage={"/FeatureBlocks/Teamsport.png"}
+        backgroundImage={TeamsportImage}
         backgroundImageAlt={"Teamsport background image"}
       />
     </>

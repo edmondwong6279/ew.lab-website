@@ -11,20 +11,23 @@ export const useWindowSize = () => {
 
   useEffect(() => {
     // Handler to call on window resize
-    function handleResize() {
+    const handleResize = () => {
       // Set window width/height to state
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight
       });
-    }
+    };
+
     // Add event listener
     window.addEventListener("resize", handleResize);
+
     // Call handler right away so state gets updated with initial window size
     handleResize();
+
     // Remove event listener on cleanup
     return () => window.removeEventListener("resize", handleResize);
-  }, []); // Empty array ensures that effect is only run on mount
+  }, []);
   return windowSize;
 };
 
@@ -33,16 +36,18 @@ export const usePositionInViewport = (elementId: string, parentId: string) => {
 
   useEffect(() => {
     const updatePosition = () => {
-      const pos =
+      const position =
         document.getElementById(elementId)?.getBoundingClientRect().top ?? 0;
 
-      setPositionInViewPort(pos);
+      setPositionInViewPort(position);
     };
 
     document
       .getElementById(parentId)
       ?.addEventListener("scroll", updatePosition);
+
     updatePosition();
+
     return () => window.removeEventListener("scroll", updatePosition);
   }, [elementId, parentId]);
 

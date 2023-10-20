@@ -1,15 +1,15 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+
 import Button from "@/components/Button";
 import { usePositionInViewport, useWindowSize } from "@/hooks/index";
-
-import styles from "./feature-block.module.scss";
 import { calculateOpacity } from "@/utils/index";
 import { navBarHeight } from "@/constants/index";
 
+import styles from "./feature-block.module.scss";
+
 export default function FeatureBlock({
-  idx,
   title,
   subtitle,
   buttonText,
@@ -17,12 +17,11 @@ export default function FeatureBlock({
   backgroundImage,
   backgroundImageAlt
 }: {
-  idx: number;
   title: string;
   subtitle: string;
   buttonText: string;
   buttonLink: string;
-  backgroundImage?: string;
+  backgroundImage?: StaticImageData;
   backgroundImageAlt?: string;
 }) {
   const scrollPos = usePositionInViewport(title, "outerContainer");

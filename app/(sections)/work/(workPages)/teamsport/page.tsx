@@ -3,6 +3,7 @@ import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
 import Results from "@/components/Results";
+import NeovestImage from "@/public/FeatureBlocks/Neovest.png";
 
 import styles from "../workpages.module.scss";
 
@@ -74,7 +75,7 @@ export default function Teamsport() {
         subtitle={"Refreshing the brand and website for a global hedgfund"}
         buttonText={"View Neovest"}
         buttonLink={"/work/neovest"}
-        backgroundImage={"/FeatureBlocks/Neovest.png"}
+        backgroundImage={NeovestImage}
         backgroundImageAlt={"Neovest background image"}
       />
     </>

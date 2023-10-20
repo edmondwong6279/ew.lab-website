@@ -6,26 +6,42 @@
 
   .text {
     @include pageContainer;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 100px;
+    color: var(--light-text-black);
+
+    @include desktop {
+      width: 58%;
+      margin-right: auto;
+    }
+
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
 
     p,
     li {
-      @include lab-body;
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 32px;
+      margin-bottom: 4px;
     }
 
     h3 {
       @include lab-h3;
-      margin-top: 36px;
-    }
-
-    h4 {
-      @include lab-h4;
-      font-weight: 700;
-      margin-top: 36px;
+      margin-bottom: 4px;
     }
 
     h5 {
+      @include lab-h5;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .lighter {
       font-weight: 600;
-      margin-top: 36px;
     }
   }
 }

@@ -21,7 +21,8 @@ export default function Privacy() {
           privacy statement discloses what information we gather and how we use
           it.
         </p>
-        <h4>INFORMATION WE GATHER AND TRACK</h4>
+        <br />
+        <h5>INFORMATION WE GATHER AND TRACK</h5>
         <p>We gather two types of information about users:</p>
         <ul>
           <li>
@@ -39,10 +40,12 @@ export default function Privacy() {
             information about an individual user to a third party.
           </li>
         </ul>
+        <br />
         <p>
           We Gather User Information In The Following Processes: Optional
           Voluntary Information.
         </p>
+        <br />
         <p>
           We offer the following services, which require some type of voluntary
           submission of personal information by users:
@@ -91,7 +94,8 @@ export default function Privacy() {
             about specific individuals with any third party.
           </li>
         </ul>
-        <h5>USAGE TRACKING</h5>
+        <br />
+        <h5 className={styles.lighter}>USAGE TRACKING</h5>
         <p>
           We track user traffic patterns throughout our site. However, we do not
           correlate this information with data about individual users. We break
@@ -108,6 +112,7 @@ export default function Privacy() {
           each page performs overall. This helps us continue to build a better
           service for you.
         </p>
+        <br />
         <h3>COOKIES</h3>
         <p>
           We may place a text file called a &quot;cookie&quot; in the browser
@@ -128,7 +133,8 @@ export default function Privacy() {
           participate actively in message boards, forums, polling, surveys and
           competitions.
         </p>
-        <h5>USE OF INFORMATION</h5>
+        <br />
+        <h5 className={styles.lighter}>USE OF INFORMATION</h5>
         <p>
           We use any information voluntarily given by our users to enhance their
           experience in our site or products, whether to provide interactive or
@@ -149,6 +155,7 @@ export default function Privacy() {
           entered in Search function as one of many measures of what interests
           our users. But we do not track which terms a particular user enters.
         </p>
+        <br />
         <p>
           We create aggregate reports on user demographics and traffic patterns
           for advertisers, sponsors and partners. Because we do not track the
@@ -158,14 +165,16 @@ export default function Privacy() {
           applicable law or valid legal process or to protect the personal
           safety of our users or the public.
         </p>
-        <h5>SHARING OF THE INFORMATION</h5>
+        <br />
+        <h5 className={styles.lighter}>SHARING OF THE INFORMATION</h5>
         <p>
           We use the above-described information to tailor our content to suit
           your needs. We will not share information about individual users with
           any third party, except to comply with applicable law or valid legal
           process or to protect the personal safety of our users or the public.
         </p>
-        <h5>SECURITY</h5>
+        <br />
+        <h5 className={styles.lighter}>SECURITY</h5>
         <p>
           We operate secure data networks protected by industry standard
           firewall and password protection systems. Our security and privacy
@@ -173,7 +182,8 @@ export default function Privacy() {
           authorized individuals have access to the information provided by our
           customers.
         </p>
-        <h4>OPT-IN / OUT POLICY</h4>
+        <br />
+        <h5>OPT-IN / OUT POLICY</h5>
         <p>We give users options wherever necessary and practical.</p>
         <p>Such choices include:</p>
         <ul>
@@ -193,17 +203,29 @@ export default function Privacy() {
           information we collect, how we use it, and under what circumstances we
           disclose it.
         </p>
+        <br />
         <h3>Image rights</h3>
         <p>This site uses images from Unsplash.</p>
         <p>We thank and acknowledge the following photographers:</p>
         <p>
-          <a>Tim Mossander</a>
+          <a href="https://unsplash.com/@timmossholder?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+            Tim Mossholder
+          </a>
         </p>
         <p>
-          <a>SRL LoungeTransly Translation Agency</a>
+          <a href="https://unsplash.com/@slrlounge?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+            SLR Lounge
+          </a>
         </p>
         <p>
-          <a>Sean Pollock</a>
+          <a href="https://unsplash.com/@translytranslations?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+            Transly Translation Agency
+          </a>
+        </p>
+        <p>
+          <a href="https://unsplash.com/@seanpollock?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+            Sean Pollock
+          </a>
         </p>
       </div>
 

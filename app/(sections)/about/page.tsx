@@ -6,6 +6,9 @@ import ClientLogos from "@/components/ClientLogos";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import Accordion from "@/components/Accordion";
+import whatWeDoImage from "@/public/About-WhatWeDo.png";
+import SuperdryImage from "@/public/FeatureBlocks/Superdry.png";
+import AboutImage from "@/public/About-Hero.png";
 
 import styles from "./about.module.scss";
 
@@ -17,7 +20,7 @@ export default function About() {
         text={"Unlocking magic with insight-led design and technology."}
         buttonText={"Get in touch"}
         buttonLink={"/contact"}
-        imageLink={"/About-Hero.png"}
+        imageLink={AboutImage}
         imageAlt={"About image"}
         arrow={false}
       />
@@ -38,7 +41,7 @@ export default function About() {
         <div className={styles.imageContainer}>
           <Image
             className={styles.image}
-            src="/About-WhatWeDo.png"
+            src={whatWeDoImage}
             width={589}
             height={760}
             alt="About what we do background image"
@@ -53,7 +56,7 @@ export default function About() {
         subtitle={"Redesigning the mobile e-commerce experience"}
         buttonText={"View Superdry"}
         buttonLink={"/work/superdry"}
-        backgroundImage={"/FeatureBlocks/Superdry.png"}
+        backgroundImage={SuperdryImage}
         backgroundImageAlt={"Superdry background image"}
       />
       <ContactForm />

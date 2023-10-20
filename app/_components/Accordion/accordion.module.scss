@@ -47,5 +47,7 @@
   ul {
     @include lab-body;
     padding: 20px 0;
+    list-style: none;
+    margin: 0;
   }
 }

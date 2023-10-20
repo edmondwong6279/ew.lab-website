@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Button from "@/components/Button";
+import clientLogosImage from "@/public/ClientLogos.svg";
 
 import styles from "./client-logos.module.scss";
 
@@ -15,7 +16,7 @@ export default function ClientLogos() {
       </div>
       <div className={styles.rightHand}>
         <Image
-          src={"/ClientLogos.svg"}
+          src={clientLogosImage}
           fill
           alt="Grid of client logos: Superdry, Carter Jones, giffgaff, Danone, Tevva, Neovest, Opayo, Hestia, Hasbean"
         />

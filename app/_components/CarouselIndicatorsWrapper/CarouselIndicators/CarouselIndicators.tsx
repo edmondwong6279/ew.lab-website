@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+
 import { interpolateRGB, arrayToRGB, calculateOpacity } from "@/utils/index";
-import styles from "./carousel-indicator.module.scss";
 import { usePositionInViewport, useWindowSize } from "@/hooks/index";
 import { navBarHeight } from "@/constants/index";
+
+import styles from "./carousel-indicator.module.scss";
 
 export default function CarouselIndicator({
   title,

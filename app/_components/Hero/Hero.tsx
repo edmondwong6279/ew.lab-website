@@ -1,8 +1,10 @@
+import Image, { StaticImageData } from "next/image";
+import cx from "classix";
+
 import ArrowDown from "@/components/ArrowDown";
 import Button from "@/components/Button";
+
 import styles from "./hero.module.scss";
-import Image from "next/image";
-import cx from "classix";
 
 export default function Hero({
   heroId,
@@ -18,7 +20,7 @@ export default function Hero({
   text: string;
   buttonText: string;
   buttonLink: string;
-  imageLink: string;
+  imageLink: StaticImageData;
   imageAlt: string;
   arrow?: boolean;
   scrollSnap?: boolean;
@@ -38,9 +40,8 @@ export default function Hero({
         className={styles.image}
         src={imageLink}
         alt={imageAlt}
-        height={800}
-        width={740}
-        priority
+        height={1442}
+        width={1109}
       />
       {arrow && (
         <div className={styles.arrow}>

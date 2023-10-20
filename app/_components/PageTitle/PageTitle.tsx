@@ -1,4 +1,5 @@
 import cx from "classix";
+
 import styles from "./page-title.module.scss";
 
 export default function PageTitle({

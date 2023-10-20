@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+
 import Button from "@/components/Button";
 
 import styles from "./feature-block-static.module.scss";
@@ -15,7 +16,7 @@ export default function FeatureBlockStatic({
   subtitle: string;
   buttonText: string;
   buttonLink: string;
-  backgroundImage?: string;
+  backgroundImage?: StaticImageData;
   backgroundImageAlt?: string;
 }) {
   return (

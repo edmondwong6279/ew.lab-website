@@ -1,10 +1,11 @@
 "use client";
 
 import { calculateOpacity } from "@/utils/index";
-import styles from "./carousel-indicator-wrapper.module.scss";
 import { usePositionInViewport, useWindowSize } from "@/hooks/index";
 import { navBarHeight, homeFeatures } from "@/constants/index";
 import CarouselIndicator from "@/components/CarouselIndicatorsWrapper/CarouselIndicators";
+
+import styles from "./carousel-indicator-wrapper.module.scss";
 
 export default function CarouselIndicatorWrapper() {
   const scrollPosTop = usePositionInViewport("hero", "outerContainer");

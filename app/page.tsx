@@ -1,8 +1,9 @@
 import ClientLogos from "@/components/ClientLogos";
 import FeatureCarousel from "@/components/FeatureCarousel";
+import Hero from "@/components/Hero";
+import RiverrHero from "@/public/RiverrHero-Image.png";
 
 import styles from "./root.module.scss";
-import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         text={"Insight-led, impactful digital experiences."}
         buttonText={"See our work"}
         buttonLink={"/work"}
-        imageLink={"/RiverrHero-Image.png"}
+        imageLink={RiverrHero}
         imageAlt={"Riverr Hero Image"}
         arrow={true}
         scrollSnap={true}

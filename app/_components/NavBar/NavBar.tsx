@@ -4,11 +4,15 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-
 import cx from "classix";
 
 import { navArray } from "@/constants/index";
 import { useWindowSize } from "@/hooks/index";
+import LogoBlackImage from "@/public/LogoBlack.svg";
+import LogoWhiteImage from "@/public/LogoWhite.svg";
+import BurgerImage from "@/public/Burger.svg";
+import CrossImage from "@/public/Cross.svg";
+
 import stylesVar from "@/styles/variables.module.scss";
 import styles from "./nav-bar.module.scss";
 
@@ -33,7 +37,7 @@ export default function NavBar({ theme }: { theme: "light" | "dark" }) {
         {theme === "light" ? (
           <Image
             priority
-            src={"/LogoBlack.svg"}
+            src={LogoBlackImage}
             width={80}
             height={34}
             alt="LAB Logo"
@@ -41,7 +45,7 @@ export default function NavBar({ theme }: { theme: "light" | "dark" }) {
         ) : (
           <Image
             priority
-            src={"/LogoWhite.svg"}
+            src={LogoWhiteImage}
             width={80}
             height={28}
             alt="LAB Logo"
@@ -54,14 +58,14 @@ export default function NavBar({ theme }: { theme: "light" | "dark" }) {
       >
         <i className={styles.burgerIcon}>
           <Image
-            src={"/Burger.svg"}
+            src={BurgerImage}
             width={38}
             height={21}
             alt="Burger menu icon"
           />
         </i>
         <i className={styles.cross}>
-          <Image src={"/Cross.svg"} width={55} height={55} alt="Cross icon" />
+          <Image src={CrossImage} width={55} height={55} alt="Cross icon" />
         </i>
       </div>
       <div

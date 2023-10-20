@@ -1,7 +1,8 @@
-import Image from "next/image";
-import styles from "./work-case-study.module.scss";
 import React from "react";
+import Image, { StaticImageData } from "next/image";
 import cx from "classix";
+
+import styles from "./work-case-study.module.scss";
 
 export default function WorkCaseStudy({
   idx,
@@ -11,11 +12,25 @@ export default function WorkCaseStudy({
   button
 }: {
   idx: number;
-  imageSrc: string;
+  imageSrc: StaticImageData;
   imageAlt: string;
   text: string;
   button: React.ReactNode;
 }) {
+  let width;
+  let height;
+
+  // alternate orientation every 2
+  if (Math.floor((idx + 1) / 2) % 2 === 0) {
+    // landscape
+    width = 632;
+    height = 440;
+  } else {
+    // portrait
+    width = 524;
+    height = 632;
+  }
+
   return (
     <div
       key={idx}
@@ -28,8 +43,8 @@ export default function WorkCaseStudy({
       <Image
         className={styles.image}
         src={imageSrc}
-        width={idx % 2 === 0 ? 632 : 524}
-        height={idx % 2 === 0 ? 440 : 632}
+        width={width}
+        height={height}
         alt={imageAlt}
       />
       <h5>{text}</h5>

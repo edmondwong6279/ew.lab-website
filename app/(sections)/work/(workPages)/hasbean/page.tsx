@@ -2,6 +2,7 @@ import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
+import SuperdryImage from "@/public/FeatureBlocks/Superdry.png";
 
 import styles from "../workpages.module.scss";
 
@@ -65,7 +66,7 @@ export default function Hasbean() {
         subtitle={"Redesigning the mobile e-commerce experience"}
         buttonText={"View Superdry"}
         buttonLink={"/work/superdry"}
-        backgroundImage={"/FeatureBlocks/Superdry.png"}
+        backgroundImage={SuperdryImage}
         backgroundImageAlt={"Superdry background image"}
       />
     </>

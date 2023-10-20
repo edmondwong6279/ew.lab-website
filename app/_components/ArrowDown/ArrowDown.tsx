@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import styles from "./arrow-down.module.scss";
 
 export default function ArrowDown({ anchor }: { anchor: string }) {

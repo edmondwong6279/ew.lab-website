@@ -2,6 +2,7 @@ import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
+import HestiaImage from "@/public/FeatureBlocks/Hestia.png";
 
 import styles from "../workpages.module.scss";
 
@@ -66,7 +67,7 @@ export default function Tevva() {
         subtitle={"Designing for empathy"}
         buttonText={"View Hestia"}
         buttonLink={"/work/hestia"}
-        backgroundImage={"/FeatureBlocks/Hestia.png"}
+        backgroundImage={HestiaImage}
         backgroundImageAlt={"Hestia background image"}
       />
     </>
