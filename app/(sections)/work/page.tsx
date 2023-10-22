@@ -35,7 +35,7 @@ export default function Work() {
             key={idx}
             idx={idx}
             imageSrc={imageMapper[text]}
-            imageAlt={"asdasdf"}
+            imageAlt={`${text} image`}
             text={subtitle}
             button={
               <Button
