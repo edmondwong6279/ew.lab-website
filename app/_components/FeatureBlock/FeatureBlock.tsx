@@ -49,6 +49,7 @@ export default function FeatureBlock({
               className={styles.image}
               alt={backgroundImageAlt}
               src={backgroundImage}
+              placeholder="blur"
               fill
               priority
             />

@@ -46,6 +46,7 @@ export default function WorkCaseStudy({
         width={width}
         height={height}
         alt={imageAlt}
+        placeholder="blur"
       />
       <h5>{text}</h5>
       <div className={styles.buttonContainer}>{button}</div>

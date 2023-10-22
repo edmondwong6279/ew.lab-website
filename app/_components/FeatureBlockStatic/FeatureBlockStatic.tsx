@@ -34,6 +34,7 @@ export default function FeatureBlockStatic({
             className={styles.image}
             alt={backgroundImageAlt}
             src={backgroundImage}
+            placeholder="blur"
             fill
             priority
           />

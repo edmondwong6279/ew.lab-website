@@ -45,6 +45,7 @@ export default function About() {
             width={589}
             height={760}
             alt="About what we do background image"
+            placeholder="blur"
           />
         </div>
       </div>

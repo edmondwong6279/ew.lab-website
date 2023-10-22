@@ -20,6 +20,7 @@ export default function Footer() {
             height={38}
             src={LinkedinImage}
             alt="Linkedin icon"
+            placeholder="blur"
           />
         </a>
       </div>
@@ -31,6 +32,7 @@ export default function Footer() {
           height={45}
           src={AccreditationImage}
           alt="Accreditation icons"
+          placeholder="blur"
         />
       </div>
       <div className={cx(styles.links, styles.item)}>

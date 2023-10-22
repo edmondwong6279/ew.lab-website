@@ -42,6 +42,7 @@ export default function Hero({
         alt={imageAlt}
         height={1442}
         width={1109}
+        placeholder="blur"
       />
       {arrow && (
         <div className={styles.arrow}>

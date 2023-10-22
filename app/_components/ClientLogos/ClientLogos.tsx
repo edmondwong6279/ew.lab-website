@@ -19,6 +19,7 @@ export default function ClientLogos() {
           src={clientLogosImage}
           fill
           alt="Grid of client logos: Superdry, Carter Jones, giffgaff, Danone, Tevva, Neovest, Opayo, Hestia, Hasbean"
+          placeholder="blur"
         />
       </div>
     </div>

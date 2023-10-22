@@ -36,19 +36,19 @@ export default function NavBar({ theme }: { theme: "light" | "dark" }) {
       <Link href={"/"}>
         {theme === "light" ? (
           <Image
-            priority
             src={LogoBlackImage}
             width={80}
             height={34}
             alt="LAB Logo"
+            placeholder="blur"
           />
         ) : (
           <Image
-            priority
             src={LogoWhiteImage}
             width={80}
             height={28}
             alt="LAB Logo"
+            placeholder="blur"
           />
         )}
       </Link>
@@ -62,10 +62,17 @@ export default function NavBar({ theme }: { theme: "light" | "dark" }) {
             width={38}
             height={21}
             alt="Burger menu icon"
+            placeholder="blur"
           />
         </i>
         <i className={styles.cross}>
-          <Image src={CrossImage} width={55} height={55} alt="Cross icon" />
+          <Image
+            src={CrossImage}
+            width={55}
+            height={55}
+            alt="Cross icon"
+            placeholder="blur"
+          />
         </i>
       </div>
       <div
