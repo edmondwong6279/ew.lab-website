@@ -82,10 +82,12 @@ export default function ContactForm() {
               name="privacy-checkbox"
               id="privacy-checkbox-input"
             ></input>
-            <p>
-              I agree to the terms of your{" "}
-              <Link href={"/privacy-policy"}>Privacy Policy</Link>
-            </p>
+            <label htmlFor="privacy-checkbox-input">
+              <p>
+                I agree to the terms of your{" "}
+                <Link href={"/privacy-policy"}>Privacy Policy</Link>
+              </p>
+            </label>
           </div>
 
           <div className={styles.buttonContainer}>

@@ -37,7 +37,7 @@ export default function FeatureBlock({
         style={{ opacity, pointerEvents: opacity > 0.9 ? "auto" : "none" }}
       >
         <h1 className={styles.heading}>{title}</h1>
-        <h5 className={styles.subtitle}>{subtitle}</h5>
+        <h2 className={styles.subtitle}>{subtitle}</h2>
         <div className={styles.buttonContainer}>
           <Button text={buttonText} link={buttonLink} variant="white" />
         </div>
