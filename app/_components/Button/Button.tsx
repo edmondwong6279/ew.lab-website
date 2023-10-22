@@ -11,7 +11,13 @@ export default function Button({
 }: {
   text: string;
   link: string;
-  variant: "black" | "yellow" | "yellow-line" | "white" | "clear";
+  variant:
+    | "black"
+    | "yellow"
+    | "yellow-line"
+    | "white"
+    | "clear"
+    | "white-fill";
   onClick?: (e: any) => any;
 }) {
   return (

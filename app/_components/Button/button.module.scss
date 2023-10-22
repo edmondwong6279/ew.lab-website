@@ -66,6 +66,12 @@
   background-color: transparent;
 }
 
+.white-fill {
+  color: var(--black);
+  border-color: var(--black);
+  background-color: var(--white);
+}
+
 .outerContainer:hover {
   border: 1px solid #000000;
 }

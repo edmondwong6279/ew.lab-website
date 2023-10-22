@@ -33,7 +33,7 @@ export default function Hero({
       <div className={styles.textContainer}>
         <h1 className={styles.text}>{text}</h1>
         <div className={styles.buttonContainer}>
-          <Button text={buttonText} link={buttonLink} variant="clear" />
+          <Button text={buttonText} link={buttonLink} variant="white-fill" />
         </div>
       </div>
       <Image

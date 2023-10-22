@@ -21,9 +21,9 @@
     @include pageContainer;
     @include flexCol;
     position: relative;
-    padding-right: 0;
     justify-content: center;
     width: 100%;
+    min-width: 350px;
     margin-top: 30px;
     height: fit-content;
     padding-bottom: 20px;
@@ -31,6 +31,7 @@
     @include tablet {
       width: 40%;
       margin-top: 0;
+      padding-right: 0;
       padding-bottom: 0;
     }
 
@@ -39,7 +40,7 @@
       padding-bottom: 10px;
 
       @include tablet {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
     }
 
@@ -47,7 +48,6 @@
       width: fit-content;
       position: absolute;
       bottom: -50px;
-      // padding-bottom: 5px;
       @include tablet {
         position: relative;
         bottom: unset;
