@@ -14,7 +14,7 @@ export default function ContactForm() {
     <div className={styles.container}>
       {showForm ? (
         <>
-          <h1 className={styles.title}>Contact us</h1>
+          <h1 className={styles.title}>Please get in touch.</h1>
           <p className={styles.info}>
             If you&apos;d like to discuss a potential project or collaboration,
             please email{" "}

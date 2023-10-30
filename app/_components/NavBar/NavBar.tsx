@@ -35,21 +35,9 @@ export default function NavBar({ theme }: { theme: "light" | "dark" }) {
     <nav className={styles.container} id={"nav"}>
       <Link href={"/"}>
         {theme === "light" ? (
-          <Image
-            src={LogoBlackImage}
-            width={80}
-            height={34}
-            alt="LAB Logo"
-            placeholder="blur"
-          />
+          <Image src={LogoBlackImage} width={80} height={34} alt="LAB Logo" />
         ) : (
-          <Image
-            src={LogoWhiteImage}
-            width={80}
-            height={28}
-            alt="LAB Logo"
-            placeholder="blur"
-          />
+          <Image src={LogoWhiteImage} width={80} height={28} alt="LAB Logo" />
         )}
       </Link>
       <div
@@ -62,17 +50,10 @@ export default function NavBar({ theme }: { theme: "light" | "dark" }) {
             width={38}
             height={21}
             alt="Burger menu icon"
-            placeholder="blur"
           />
         </i>
         <i className={styles.cross}>
-          <Image
-            src={CrossImage}
-            width={55}
-            height={55}
-            alt="Cross icon"
-            placeholder="blur"
-          />
+          <Image src={CrossImage} width={55} height={55} alt="Cross icon" />
         </i>
       </div>
       <div

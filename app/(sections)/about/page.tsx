@@ -26,12 +26,10 @@ export default function About() {
       />
       <LeftAlignedText>
         <p>
-          We aim to become your long-term experience design, insights and
-          technology partner, delivering for you with quality and speed.
-          Designing and building beautiful and creative scalable solutions that
-          are exceptional experiences, that meet your business needs and are
-          centred in deep insight, helping you to create lasting relationships
-          with your customers.
+          Our aim is to become your long-term design, insights and technology
+          partner, delivering you quality and speed. We design and build
+          beautiful and creative scalable solutions that meet your business
+          needs and are centred in deep insight.
         </p>
       </LeftAlignedText>
       <div className={styles.whatWeDo}>

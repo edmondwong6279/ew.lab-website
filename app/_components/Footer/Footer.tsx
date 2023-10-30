@@ -20,7 +20,6 @@ export default function Footer() {
             height={38}
             src={LinkedinImage}
             alt="Linkedin icon"
-            placeholder="blur"
           />
         </a>
       </div>
