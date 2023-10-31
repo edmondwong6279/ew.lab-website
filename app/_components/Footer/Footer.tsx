@@ -3,7 +3,7 @@ import Image from "next/image";
 import cx from "classix";
 
 import { footerArray } from "@/constants/index";
-import AccreditationImage from "@/public/accreditation.png";
+import AccreditationImage from "@/public/accreditation.jpg";
 import LinkedinImage from "@/public/linkedin.svg";
 
 import styles from "./footer.module.scss";

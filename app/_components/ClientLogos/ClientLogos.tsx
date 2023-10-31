@@ -1,7 +1,9 @@
 import Image from "next/image";
 
 import Button from "@/components/Button";
-import clientLogosImage from "@/public/ClientLogos.svg";
+import clientLogosTop from "@/public/ClientLogos/TopRow.svg";
+import clientLogosMiddle from "@/public/ClientLogos/MiddleRow.svg";
+import clientLogosBottom from "@/public/ClientLogos/BottomRow.svg";
 
 import styles from "./client-logos.module.scss";
 
@@ -13,14 +15,24 @@ export default function ClientLogos() {
           Partnering with brands that see the world differently.
         </h1>
         <div className={styles.buttonContainer}>
-        <Button text={"See our Work"} link={"/work"} variant="clear" />
+          <Button text={"See our Work"} link={"/work"} variant="clear" />
         </div>
       </div>
       <div className={styles.rightHand}>
         <Image
-          src={clientLogosImage}
-          fill
-          alt="Grid of client logos: Superdry, Carter Jones, giffgaff, Danone, Tevva, Neovest, Opayo, Hestia, Hasbean"
+          src={clientLogosTop}
+          alt="Grid of client logos: Superdry, Carter Jones, giffgaff"
+          width={576}
+        />
+        <Image
+          src={clientLogosMiddle}
+          alt="Grid of client logos:Danone, Tevva, Neovest"
+          width={576}
+        />
+        <Image
+          src={clientLogosBottom}
+          alt="Grid of client logos: Opayo, Hestia, Hasbean"
+          width={576}
         />
       </div>
     </div>

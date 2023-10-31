@@ -2,7 +2,7 @@ import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
-import HestiaImage from "@/public/FeatureBlocks/Hestia.png";
+import HestiaImage from "@/public/FeatureBlocks/Hestia.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -22,10 +22,10 @@ export default function Tevva() {
       </LeftAlignedText>
       <div className={styles.imageContainer}>
         <picture>
-          <source srcSet="/CaseStudy/Tevva.png" media="(min-width: 768px)" />
+          <source srcSet="/CaseStudy/Tevva.jpg" media="(min-width: 768px)" />
           <img
             className={styles.image}
-            src="/CaseStudy/Tevva-mob.png"
+            src="/CaseStudy/Tevva-mob.jpg"
             alt="Tevva background image"
           />
         </picture>
@@ -46,12 +46,12 @@ export default function Tevva() {
       <div className={styles.imageContainer}>
         <picture>
           <source
-            srcSet="/CaseStudy/Tevva-main.png"
+            srcSet="/CaseStudy/Tevva-main.jpg"
             media="(min-width: 768px)"
           />
           <img
             className={styles.image}
-            src="/CaseStudy/Tevva-main-mob.png"
+            src="/CaseStudy/Tevva-main-mob.jpg"
             alt="Tevva background image"
           />
         </picture>

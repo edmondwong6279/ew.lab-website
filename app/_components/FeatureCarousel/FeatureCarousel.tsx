@@ -2,11 +2,11 @@ import { homeFeatures } from "@/constants/index";
 import FeatureBlock from "@/components/FeatureBlock";
 import CarouselIndicatorsWrapper from "@/components/CarouselIndicatorsWrapper";
 
-import SuperdryImage from "@/public/FeatureBlocks/Superdry.png";
-import TeamsportImage from "@/public/FeatureBlocks/Teamsport.png";
-import NeovestImage from "@/public/FeatureBlocks/Neovest.png";
-import HestiaImage from "@/public/FeatureBlocks/Hestia.png";
-import TevvaImage from "@/public/FeatureBlocks/Tevva.png";
+import SuperdryImage from "@/public/FeatureBlocks/Superdry.jpg";
+import TeamsportImage from "@/public/FeatureBlocks/Teamsport.jpg";
+import NeovestImage from "@/public/FeatureBlocks/Neovest.jpg";
+import HestiaImage from "@/public/FeatureBlocks/Hestia.jpg";
+import TevvaImage from "@/public/FeatureBlocks/Tevva.jpg";
 
 export default function FeatureCarousel() {
   const imageMapper = {

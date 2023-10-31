@@ -3,7 +3,7 @@ import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
 import Results from "@/components/Results";
-import NeovestImage from "@/public/FeatureBlocks/Neovest.png";
+import NeovestImage from "@/public/FeatureBlocks/Neovest.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -25,12 +25,12 @@ export default function Teamsport() {
       <div className={styles.imageContainer}>
         <picture>
           <source
-            srcSet="/CaseStudy/Teamsport.png"
+            srcSet="/CaseStudy/Teamsport.jpg"
             media="(min-width: 768px)"
           />
           <img
             className={styles.image}
-            src="/CaseStudy/Teamsport-mob.png"
+            src="/CaseStudy/Teamsport-mob.jpg"
             alt="Teamsport background image"
           />
         </picture>
@@ -60,12 +60,12 @@ export default function Teamsport() {
       <div className={styles.imageContainer}>
         <picture>
           <source
-            srcSet="/CaseStudy/Teamsport-main.png"
+            srcSet="/CaseStudy/Teamsport-main.jpg"
             media="(min-width: 768px)"
           />
           <img
             className={styles.image}
-            src="/CaseStudy/Teamsport-main-mob.png"
+            src="/CaseStudy/Teamsport-main-mob.jpg"
             alt="Teamsport background image"
           />
         </picture>

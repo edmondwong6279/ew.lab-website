@@ -43,6 +43,7 @@ export default function Hero({
         height={1442}
         width={1109}
         placeholder="blur"
+        priority
       />
       {arrow && (
         <div className={styles.arrow}>

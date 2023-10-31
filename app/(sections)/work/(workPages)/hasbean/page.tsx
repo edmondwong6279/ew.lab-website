@@ -2,7 +2,7 @@ import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
-import SuperdryImage from "@/public/FeatureBlocks/Superdry.png";
+import SuperdryImage from "@/public/FeatureBlocks/Superdry.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -20,10 +20,10 @@ export default function Hasbean() {
       </LeftAlignedText>
       <div className={styles.imageContainer}>
         <picture>
-          <source srcSet="/CaseStudy/Hasbean.png" media="(min-width: 768px)" />
+          <source srcSet="/CaseStudy/Hasbean.jpg" media="(min-width: 768px)" />
           <img
             className={styles.image}
-            src="/CaseStudy/Hasbean-mob.png"
+            src="/CaseStudy/Hasbean-mob.jpg"
             alt="Hasbean background image"
           />
         </picture>
@@ -41,12 +41,12 @@ export default function Hasbean() {
       <div className={styles.imageContainer}>
         <picture>
           <source
-            srcSet="/CaseStudy/Hasbean-main.png"
+            srcSet="/CaseStudy/Hasbean-main.jpg"
             media="(min-width: 768px)"
           />
           <img
             className={styles.image}
-            src="/CaseStudy/Hasbean-main-mob.png"
+            src="/CaseStudy/Hasbean-main-mob.jpg"
             alt="Hasbean background image"
           />
         </picture>

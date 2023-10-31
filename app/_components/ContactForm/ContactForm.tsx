@@ -19,8 +19,7 @@ export default function ContactForm() {
             If you&apos;d like to discuss a potential project or collaboration,
             please email{" "}
             <a href="mailto:hello@lab.co.uk">hello&#64;lab.co.uk</a> or call us
-            on
-            <a href="tel:+442071836668">+44 &#40;0&#41;207 183 6668</a>
+            on <a href="tel:+442071836668">+44 &#40;0&#41;207 183 6668</a>
           </p>
         </>
       ) : (

@@ -3,7 +3,7 @@ import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import Quote from "@/components/Quote";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
-import SuperdryImage from "@/public/FeatureBlocks/Superdry.png";
+import SuperdryImage from "@/public/FeatureBlocks/Superdry.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -22,10 +22,10 @@ export default function Hestia() {
       </LeftAlignedText>
       <div className={styles.imageContainer}>
         <picture>
-          <source srcSet="/CaseStudy/Hestia.png" media="(min-width: 768px)" />
+          <source srcSet="/CaseStudy/Hestia.jpg" media="(min-width: 768px)" />
           <img
             className={styles.image}
-            src="/CaseStudy/Hestia-mob.png"
+            src="/CaseStudy/Hestia-mob.jpg"
             alt="Hestia background image"
           />
         </picture>
@@ -45,12 +45,12 @@ export default function Hestia() {
       <div className={styles.imageContainer}>
         <picture>
           <source
-            srcSet="/CaseStudy/Hestia-main.png"
+            srcSet="/CaseStudy/Hestia-main.jpg"
             media="(min-width: 768px)"
           />
           <img
             className={styles.image}
-            src="/CaseStudy/Hestia-main-mob.png"
+            src="/CaseStudy/Hestia-main-mob.jpg"
             alt="Hestia background image"
           />
         </picture>

@@ -2,7 +2,7 @@ import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
-import HestiaImage from "@/public/FeatureBlocks/Hestia.png";
+import HestiaImage from "@/public/FeatureBlocks/Hestia.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -24,10 +24,10 @@ export default function Neovest() {
       </LeftAlignedText>
       <div className={styles.imageContainer}>
         <picture>
-          <source srcSet="/CaseStudy/Neovest.png" media="(min-width: 768px)" />
+          <source srcSet="/CaseStudy/Neovest.jpg" media="(min-width: 768px)" />
           <img
             className={styles.image}
-            src="/CaseStudy/Neovest-mob.png"
+            src="/CaseStudy/Neovest-mob.jpg"
             alt="Neovest background image"
           />
         </picture>
@@ -45,12 +45,12 @@ export default function Neovest() {
       <div className={styles.imageContainer}>
         <picture>
           <source
-            srcSet="/CaseStudy/Neovest-main.png"
+            srcSet="/CaseStudy/Neovest-main.jpg"
             media="(min-width: 768px)"
           />
           <img
             className={styles.image}
-            src="/CaseStudy/Neovest-main-mob.png"
+            src="/CaseStudy/Neovest-main-mob.jpg"
             alt="Neovest background image"
           />
         </picture>

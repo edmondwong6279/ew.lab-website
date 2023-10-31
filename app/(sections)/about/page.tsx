@@ -6,9 +6,9 @@ import ClientLogos from "@/components/ClientLogos";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import Accordion from "@/components/Accordion";
-import whatWeDoImage from "@/public/About-WhatWeDo.png";
-import SuperdryImage from "@/public/FeatureBlocks/Superdry.png";
-import AboutImage from "@/public/About-Hero.png";
+import whatWeDoImage from "@/public/About-WhatWeDo.jpg";
+import SuperdryImage from "@/public/FeatureBlocks/Superdry.jpg";
+import AboutImage from "@/public/About-Hero.jpg";
 
 import styles from "./about.module.scss";
 

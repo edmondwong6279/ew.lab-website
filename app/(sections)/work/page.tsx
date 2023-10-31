@@ -2,13 +2,13 @@ import PageTitle from "@/components/PageTitle";
 import { projectsArray } from "@/constants/index";
 import WorkCaseStudy from "@/components/WorkCaseStudy";
 import Button from "@/components/Button";
-import SuperdryImage from "@/public/WorkLanding/Superdry.png";
-import iSkyImage from "@/public/WorkLanding/isky.png";
-import HestiaImage from "@/public/WorkLanding/Hestia.png";
-import NeovestImage from "@/public/WorkLanding/Neovest.png";
-import TeamsportImage from "@/public/WorkLanding/Teamsport.png";
-import TevvaImage from "@/public/WorkLanding/Tevva.png";
-import HasbeanImage from "@/public/WorkLanding/Hasbean.png";
+import SuperdryImage from "@/public/WorkLanding/Superdry.jpg";
+import iSkyImage from "@/public/WorkLanding/isky.jpg";
+import HestiaImage from "@/public/WorkLanding/Hestia.jpg";
+import NeovestImage from "@/public/WorkLanding/Neovest.jpg";
+import TeamsportImage from "@/public/WorkLanding/Teamsport.jpg";
+import TevvaImage from "@/public/WorkLanding/Tevva.jpg";
+import HasbeanImage from "@/public/WorkLanding/Hasbean.jpg";
 
 import styles from "./work.module.scss";
 

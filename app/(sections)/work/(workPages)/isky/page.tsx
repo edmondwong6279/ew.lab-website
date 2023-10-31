@@ -2,7 +2,7 @@ import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
-import NeovestImage from "@/public/FeatureBlocks/Neovest.png";
+import NeovestImage from "@/public/FeatureBlocks/Neovest.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -22,10 +22,10 @@ export default function isky() {
       </LeftAlignedText>
       <div className={styles.imageContainer}>
         <picture>
-          <source srcSet="/CaseStudy/isky.png" media="(min-width: 768px)" />
+          <source srcSet="/CaseStudy/isky.jpg" media="(min-width: 768px)" />
           <img
             className={styles.image}
-            src="/CaseStudy/isky-mob.png"
+            src="/CaseStudy/isky-mob.jpg"
             alt="isky background image"
           />
         </picture>
@@ -44,12 +44,12 @@ export default function isky() {
       <div className={styles.imageContainer}>
         <picture>
           <source
-            srcSet="/CaseStudy/isky-main.png"
+            srcSet="/CaseStudy/isky-main.jpg"
             media="(min-width: 768px)"
           />
           <img
             className={styles.image}
-            src="/CaseStudy/isky-main-mob.png"
+            src="/CaseStudy/isky-main-mob.jpg"
             alt="isky background image"
           />
         </picture>

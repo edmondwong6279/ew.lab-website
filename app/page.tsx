@@ -1,7 +1,7 @@
 import ClientLogos from "@/components/ClientLogos";
 import FeatureCarousel from "@/components/FeatureCarousel";
 import Hero from "@/components/Hero";
-import RiverrHero from "@/public/RiverrHero-Image.png";
+import RiverrHero from "@/public/RiverrHero-Image.jpg";
 
 import styles from "./root.module.scss";
 

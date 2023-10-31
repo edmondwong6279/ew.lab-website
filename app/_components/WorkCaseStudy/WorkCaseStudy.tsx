@@ -51,6 +51,7 @@ export default function WorkCaseStudy({
           height={height}
           alt={imageAlt}
           placeholder="blur"
+          priority
         />
       </Link>
       <h5>{text}</h5>

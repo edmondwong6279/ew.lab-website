@@ -3,7 +3,7 @@ import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import Quote from "@/components/Quote";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
-import TeamsportImage from "@/public/FeatureBlocks/Teamsport.png";
+import TeamsportImage from "@/public/FeatureBlocks/Teamsport.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -28,10 +28,10 @@ export default function Superdry() {
       </LeftAlignedText>
       <div className={styles.imageContainer}>
         <picture>
-          <source srcSet="/CaseStudy/Superdry.png" media="(min-width: 768px)" />
+          <source srcSet="/CaseStudy/Superdry.jpg" media="(min-width: 768px)" />
           <img
             className={styles.image}
-            src="/CaseStudy/Superdry-mob.png"
+            src="/CaseStudy/Superdry-mob.jpg"
             alt="Superdry background image"
           />
         </picture>
@@ -51,12 +51,12 @@ export default function Superdry() {
       <div className={styles.imageContainer}>
         <picture>
           <source
-            srcSet="/CaseStudy/Superdry-main.png"
+            srcSet="/CaseStudy/Superdry-main.jpg"
             media="(min-width: 768px)"
           />
           <img
             className={styles.image}
-            src="/CaseStudy/Superdry-main-mob.png"
+            src="/CaseStudy/Superdry-main-mob.jpg"
             alt="Superdry background image"
           />
         </picture>

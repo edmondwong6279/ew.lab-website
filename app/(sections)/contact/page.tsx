@@ -1,6 +1,6 @@
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
 import ContactForm from "@/components/ContactForm";
-import TeamsportImage from "@/public/FeatureBlocks/Teamsport.png";
+import TeamsportImage from "@/public/FeatureBlocks/Teamsport.jpg";
 
 import styles from "./contact.module.scss";
 

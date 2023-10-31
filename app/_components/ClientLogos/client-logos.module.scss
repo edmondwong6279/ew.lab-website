@@ -44,10 +44,12 @@
   }
 
   .rightHand {
-    display: flex;
+    @include flexCol;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 320px;
     position: relative;
-    justify-content: center;
-    align-content: center;
     width: 100%;
     margin-top: 50px;
     margin-bottom: 40px;
