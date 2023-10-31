@@ -5,20 +5,30 @@
   color: var(--black);
   font-weight: 300;
   line-height: 32px;
-  width: 100%;
   align-self: start;
   padding-bottom: 60px;
-
-  @include tablet {
-    padding-right: 0;
-    width: 59%;
-  }
 
   a {
     text-decoration: underline;
   }
 
   p {
+    width: 100%;
     margin-bottom: 1rem;
+
+    @include tablet {
+      padding-right: 0;
+      width: 59%;
+    }
+  }
+
+  &.black {
+    padding-top: 20px;
+    color: var(--white);
+    background-color: var(--lab-black);
+
+    @include tablet {
+      padding-top: 60px;
+    }
   }
 }

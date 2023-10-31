@@ -74,7 +74,7 @@
 
   .form {
     @include flexCol;
-    gap: 10px;
+    gap: 18px;
     grid-area: form;
 
     @include tablet {
@@ -109,6 +109,11 @@
     .checkboxField {
       display: flex;
       gap: 8px;
+      margin-bottom: 0;
+
+      @include tablet {
+        margin-bottom: 42px;
+      }
     }
 
     textarea:focus,
@@ -127,6 +132,10 @@
 
   a {
     text-decoration: underline;
+  }
+
+  a:hover {
+    color: var(--lab-neon);
   }
 
   .buttonContainer a,

@@ -62,14 +62,16 @@ export default function Tevva() {
           and developed digital kiosks that are used at key industry events.
         </p>
       </TextWithTitle>
-      <FeatureBlockStatic
-        title={"Hestia"}
-        subtitle={"Designing for empathy"}
-        buttonText={"View Hestia"}
-        buttonLink={"/work/hestia"}
-        backgroundImage={HestiaImage}
-        backgroundImageAlt={"Hestia background image"}
-      />
+      <div className={styles.featureBlockContainer}>
+        <FeatureBlockStatic
+          title={"Hestia"}
+          subtitle={"Designing for empathy"}
+          buttonText={"View Hestia"}
+          buttonLink={"/work/hestia"}
+          backgroundImage={HestiaImage}
+          backgroundImageAlt={"Hestia background image"}
+        />
+      </div>
     </>
   );
 }

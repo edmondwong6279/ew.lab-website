@@ -67,14 +67,16 @@ export default function Superdry() {
         }
         author={"Mark Harvey, Head of Digital"}
       />
-      <FeatureBlockStatic
-        title={"Teamsport"}
-        subtitle={"Moving to a performant composable platform"}
-        buttonText={"View Teamsport"}
-        buttonLink={"/work/teamsport"}
-        backgroundImage={TeamsportImage}
-        backgroundImageAlt={"Teamsport background image"}
-      />
+      <div className={styles.featureBlockContainer}>
+        <FeatureBlockStatic
+          title={"Teamsport"}
+          subtitle={"Moving to a performant composable platform"}
+          buttonText={"View Teamsport"}
+          buttonLink={"/work/teamsport"}
+          backgroundImage={TeamsportImage}
+          backgroundImageAlt={"Teamsport background image"}
+        />
+      </div>
     </>
   );
 }

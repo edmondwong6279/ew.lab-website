@@ -1,9 +1,14 @@
+import cx from "classix";
 import styles from "./left-aligned-text.module.scss";
 
 export default function LeftAlignedText({
-  children
+  children,
+  variant = "default"
 }: {
+  variant?: "default" | "black";
   children: React.ReactNode;
 }) {
-  return <div className={styles.container}>{children}</div>;
+  return (
+    <div className={cx(styles.container, styles[variant])}>{children}</div>
+  );
 }

@@ -3,7 +3,7 @@ import styles from "./accordion.module.scss";
 export default function Accordion() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>What we do</h1>
+      <h1 className={styles.title}>Our Services</h1>
       <details className={styles.details}>
         <summary className={styles.summary}>Design</summary>
         <ul>

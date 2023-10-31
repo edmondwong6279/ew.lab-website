@@ -10,7 +10,7 @@ export default function Home() {
     <main className={styles.container}>
       <Hero
         heroId={"hero"}
-        text={"Insight-led, impactful digital experiences."}
+        text={"Impactful digital experiences."}
         buttonText={"See our work"}
         buttonLink={"/work"}
         imageLink={RiverrHero}

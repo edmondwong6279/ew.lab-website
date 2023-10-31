@@ -37,6 +37,7 @@ export default function Work() {
             imageSrc={imageMapper[text]}
             imageAlt={`${text} image`}
             text={subtitle}
+            link={link}
             button={
               <Button
                 text={`See ${text}`}

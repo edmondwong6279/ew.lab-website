@@ -12,7 +12,9 @@ export default function ClientLogos() {
         <h1 className={styles.leftText}>
           Partnering with brands that see the world differently.
         </h1>
+        <div className={styles.buttonContainer}>
         <Button text={"See our Work"} link={"/work"} variant="clear" />
+        </div>
       </div>
       <div className={styles.rightHand}>
         <Image

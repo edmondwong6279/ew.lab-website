@@ -55,14 +55,16 @@ export default function Neovest() {
           />
         </picture>
       </div>
-      <FeatureBlockStatic
-        title={"Hestia"}
-        subtitle={"Designing for empathy"}
-        buttonText={"View Hestia"}
-        buttonLink={"/work/hestia"}
-        backgroundImage={HestiaImage}
-        backgroundImageAlt={"Hestia background image"}
-      />
+      <div className={styles.featureBlockContainer}>
+        <FeatureBlockStatic
+          title={"Hestia"}
+          subtitle={"Designing for empathy"}
+          buttonText={"View Hestia"}
+          buttonLink={"/work/hestia"}
+          backgroundImage={HestiaImage}
+          backgroundImageAlt={"Hestia background image"}
+        />
+      </div>
     </>
   );
 }

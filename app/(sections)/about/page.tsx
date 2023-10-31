@@ -17,14 +17,14 @@ export default function About() {
     <main className={styles.container}>
       <Hero
         heroId={"0"}
-        text={"Unlocking magic with insight-led design and technology."}
+        text={"Exceptional insight led digital experiences."}
         buttonText={"Get in touch"}
         buttonLink={"/contact"}
         imageLink={AboutImage}
         imageAlt={"About image"}
         arrow={false}
       />
-      <LeftAlignedText>
+      <LeftAlignedText variant="black">
         <p>
           Our aim is to become your long-term design, insights and technology
           partner, delivering you quality and speed. We design and build

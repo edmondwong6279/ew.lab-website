@@ -70,14 +70,16 @@ export default function Teamsport() {
           />
         </picture>
       </div>
-      <FeatureBlockStatic
-        title={"Neovest"}
-        subtitle={"Refreshing the brand and website for a global hedgfund"}
-        buttonText={"View Neovest"}
-        buttonLink={"/work/neovest"}
-        backgroundImage={NeovestImage}
-        backgroundImageAlt={"Neovest background image"}
-      />
+      <div className={styles.featureBlockContainer}>
+        <FeatureBlockStatic
+          title={"Neovest"}
+          subtitle={"Refreshing the brand and website for a global hedgfund"}
+          buttonText={"View Neovest"}
+          buttonLink={"/work/neovest"}
+          backgroundImage={NeovestImage}
+          backgroundImageAlt={"Neovest background image"}
+        />
+      </div>
     </>
   );
 }

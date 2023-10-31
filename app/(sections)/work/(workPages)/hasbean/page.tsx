@@ -61,14 +61,16 @@ export default function Hasbean() {
           wishing to buy coffee online.
         </p>
       </TextWithTitle>
-      <FeatureBlockStatic
-        title={"Superdry"}
-        subtitle={"Redesigning the mobile e-commerce experience"}
-        buttonText={"View Superdry"}
-        buttonLink={"/work/superdry"}
-        backgroundImage={SuperdryImage}
-        backgroundImageAlt={"Superdry background image"}
-      />
+      <div className={styles.featureBlockContainer}>
+        <FeatureBlockStatic
+          title={"Superdry"}
+          subtitle={"Redesigning the mobile e-commerce experience"}
+          buttonText={"View Superdry"}
+          buttonLink={"/work/superdry"}
+          backgroundImage={SuperdryImage}
+          backgroundImageAlt={"Superdry background image"}
+        />
+      </div>
     </>
   );
 }

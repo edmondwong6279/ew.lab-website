@@ -30,10 +30,16 @@
 
     .leftText {
       @include lab-h3;
+      width: 85%;
       @include desktop {
+        width: 100%;
         font-size: 3.4375rem;
         line-height: 65px;
       }
+    }
+
+    .buttonContainer {
+      width: fit-content;
     }
   }
 
@@ -43,8 +49,8 @@
     justify-content: center;
     align-content: center;
     width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     margin-left: 0;
     flex: 1;
 

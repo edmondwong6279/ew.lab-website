@@ -84,5 +84,10 @@
     .link:last-child {
       padding-right: 0;
     }
+
+    .link:hover {
+      color: var(--lab-neon);
+      text-decoration: underline;
+    }
   }
 }
