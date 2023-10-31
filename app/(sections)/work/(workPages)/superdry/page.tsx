@@ -1,9 +1,16 @@
+import Image from "next/image";
+
 import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import Quote from "@/components/Quote";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
+
 import TeamsportImage from "@/public/FeatureBlocks/Teamsport.jpg";
+import SuperdryImage from "@/public/CaseStudy/Superdry.jpg";
+import SuperdryMainImage from "@/public/CaseStudy/Superdry-main.jpg";
+import SuperdryMobImage from "@/public/CaseStudy/Superdry-mob.jpg";
+import SuperdryMainMobImage from "@/public/CaseStudy/Superdry-main-mob.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -27,14 +34,20 @@ export default function Superdry() {
         </p>
       </LeftAlignedText>
       <div className={styles.imageContainer}>
-        <picture>
-          <source srcSet="/CaseStudy/Superdry.jpg" media="(min-width: 768px)" />
-          <img
-            className={styles.image}
-            src="/CaseStudy/Superdry-mob.jpg"
-            alt="Superdry background image"
-          />
-        </picture>
+        <Image
+          className={styles.imageDesktop}
+          src={SuperdryImage}
+          sizes="100vw"
+          alt="Superdry background image"
+          placeholder="blur"
+        />
+        <Image
+          className={styles.imageMob}
+          src={SuperdryMobImage}
+          sizes="100vw"
+          alt="Superdry background image"
+          placeholder="blur"
+        />
       </div>
       <TextWithTitle title="Science meets style">
         <p>
@@ -49,17 +62,20 @@ export default function Superdry() {
         </p>
       </TextWithTitle>
       <div className={styles.imageContainer}>
-        <picture>
-          <source
-            srcSet="/CaseStudy/Superdry-main.jpg"
-            media="(min-width: 768px)"
-          />
-          <img
-            className={styles.image}
-            src="/CaseStudy/Superdry-main-mob.jpg"
-            alt="Superdry background image"
-          />
-        </picture>
+        <Image
+          className={styles.imageDesktop}
+          src={SuperdryMainImage}
+          sizes="100vw"
+          alt="Superdry background image"
+          placeholder="blur"
+        />
+        <Image
+          className={styles.imageMob}
+          src={SuperdryMainMobImage}
+          sizes="100vw"
+          alt="Superdry background image"
+          placeholder="blur"
+        />
       </div>
       <Quote
         quote={

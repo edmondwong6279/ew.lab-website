@@ -1,12 +1,19 @@
+import Image from "next/image";
+
 import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
+
 import SuperdryImage from "@/public/FeatureBlocks/Superdry.jpg";
+import HasbeanImage from "@/public/CaseStudy/Hasbean.jpg";
+import HasbeanMainImage from "@/public/CaseStudy/Hasbean-main.jpg";
+import HasbeanMobImage from "@/public/CaseStudy/Hasbean-mob.jpg";
+import HasbeanMainMobImage from "@/public/CaseStudy/Hasbean-main-mob.jpg";
 
 import styles from "../workpages.module.scss";
 
-export default function Hasbean() {
+export default function HasbeanComponent() {
   return (
     <>
       <PageTitle title="Hasbean" />
@@ -19,14 +26,20 @@ export default function Hasbean() {
         </p>
       </LeftAlignedText>
       <div className={styles.imageContainer}>
-        <picture>
-          <source srcSet="/CaseStudy/Hasbean.jpg" media="(min-width: 768px)" />
-          <img
-            className={styles.image}
-            src="/CaseStudy/Hasbean-mob.jpg"
-            alt="Hasbean background image"
-          />
-        </picture>
+        <Image
+          className={styles.imageDesktop}
+          src={HasbeanImage}
+          sizes="100vw"
+          alt="Hasbean background image"
+          placeholder="blur"
+        />
+        <Image
+          className={styles.imageMob}
+          src={HasbeanMobImage}
+          sizes="100vw"
+          alt="Hasbean background image"
+          placeholder="blur"
+        />
       </div>
       <TextWithTitle title="Serving up results">
         <p>
@@ -39,17 +52,20 @@ export default function Hasbean() {
         </p>
       </TextWithTitle>
       <div className={styles.imageContainer}>
-        <picture>
-          <source
-            srcSet="/CaseStudy/Hasbean-main.jpg"
-            media="(min-width: 768px)"
-          />
-          <img
-            className={styles.image}
-            src="/CaseStudy/Hasbean-main-mob.jpg"
-            alt="Hasbean background image"
-          />
-        </picture>
+        <Image
+          className={styles.imageDesktop}
+          src={HasbeanMainImage}
+          sizes="100vw"
+          alt="Hasbean background image"
+          placeholder="blur"
+        />
+        <Image
+          className={styles.imageMob}
+          src={HasbeanMainMobImage}
+          sizes="100vw"
+          alt="Hasbean background image"
+          placeholder="blur"
+        />
       </div>
       <TextWithTitle title="Open to all">
         <p>

@@ -1,8 +1,15 @@
+import Image from "next/image";
+
 import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
+
 import NeovestImage from "@/public/FeatureBlocks/Neovest.jpg";
+import iskyImage from "@/public/CaseStudy/isky.jpg";
+import iskyMainImage from "@/public/CaseStudy/isky-main.jpg";
+import iskyMobImage from "@/public/CaseStudy/isky-mob.jpg";
+import iskyMainMobImage from "@/public/CaseStudy/isky-main-mob.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -21,14 +28,20 @@ export default function isky() {
         </p>
       </LeftAlignedText>
       <div className={styles.imageContainer}>
-        <picture>
-          <source srcSet="/CaseStudy/isky.jpg" media="(min-width: 768px)" />
-          <img
-            className={styles.image}
-            src="/CaseStudy/isky-mob.jpg"
-            alt="isky background image"
-          />
-        </picture>
+        <Image
+          className={styles.imageDesktop}
+          src={iskyImage}
+          sizes="100vw"
+          alt="isky background image"
+          placeholder="blur"
+        />
+        <Image
+          className={styles.imageMob}
+          src={iskyMobImage}
+          sizes="100vw"
+          alt="isky background image"
+          placeholder="blur"
+        />
       </div>
       <TextWithTitle title="Complex migration and delivery of a new platform">
         <p>
@@ -42,17 +55,20 @@ export default function isky() {
         </p>
       </TextWithTitle>
       <div className={styles.imageContainer}>
-        <picture>
-          <source
-            srcSet="/CaseStudy/isky-main.jpg"
-            media="(min-width: 768px)"
-          />
-          <img
-            className={styles.image}
-            src="/CaseStudy/isky-main-mob.jpg"
-            alt="isky background image"
-          />
-        </picture>
+        <Image
+          className={styles.imageDesktop}
+          src={iskyMainImage}
+          sizes="100vw"
+          alt="isky background image"
+          placeholder="blur"
+        />
+        <Image
+          className={styles.imageMob}
+          src={iskyMainMobImage}
+          sizes="100vw"
+          alt="isky background image"
+          placeholder="blur"
+        />
       </div>
       <div className={styles.featureBlockContainer}>
         <FeatureBlockStatic

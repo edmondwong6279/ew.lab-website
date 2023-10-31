@@ -1,9 +1,16 @@
+import Image from "next/image";
+
 import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import Quote from "@/components/Quote";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
+
 import SuperdryImage from "@/public/FeatureBlocks/Superdry.jpg";
+import HestiaImage from "@/public/CaseStudy/Hestia.jpg";
+import HestiaMainImage from "@/public/CaseStudy/Hestia-main.jpg";
+import HestiaMobImage from "@/public/CaseStudy/Hestia-mob.jpg";
+import HestiaMainMobImage from "@/public/CaseStudy/Hestia-main-mob.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -21,14 +28,20 @@ export default function Hestia() {
         </p>
       </LeftAlignedText>
       <div className={styles.imageContainer}>
-        <picture>
-          <source srcSet="/CaseStudy/Hestia.jpg" media="(min-width: 768px)" />
-          <img
-            className={styles.image}
-            src="/CaseStudy/Hestia-mob.jpg"
-            alt="Hestia background image"
-          />
-        </picture>
+        <Image
+          className={styles.imageDesktop}
+          src={HestiaImage}
+          sizes="100vw"
+          alt="Hestia background image"
+          placeholder="blur"
+        />
+        <Image
+          className={styles.imageMob}
+          src={HestiaMobImage}
+          sizes="100vw"
+          alt="Hestia background image"
+          placeholder="blur"
+        />
       </div>
       <TextWithTitle title="A path to safety">
         <p>
@@ -43,17 +56,20 @@ export default function Hestia() {
         </p>
       </TextWithTitle>
       <div className={styles.imageContainer}>
-        <picture>
-          <source
-            srcSet="/CaseStudy/Hestia-main.jpg"
-            media="(min-width: 768px)"
-          />
-          <img
-            className={styles.image}
-            src="/CaseStudy/Hestia-main-mob.jpg"
-            alt="Hestia background image"
-          />
-        </picture>
+        <Image
+          className={styles.imageDesktop}
+          src={HestiaMainImage}
+          sizes="100vw"
+          alt="Hestia background image"
+          placeholder="blur"
+        />
+        <Image
+          className={styles.imageMob}
+          src={HestiaMainMobImage}
+          sizes="100vw"
+          alt="Hestia background image"
+          placeholder="blur"
+        />
       </div>
       <Quote
         quote={

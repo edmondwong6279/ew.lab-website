@@ -19,3 +19,17 @@
 .featureBlockContainer {
   margin-top: 60px;
 }
+
+.imageMob {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+
+.imageDesktop {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}

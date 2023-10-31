@@ -1,9 +1,16 @@
+import Image from "next/image";
+
 import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
 import Results from "@/components/Results";
+
 import NeovestImage from "@/public/FeatureBlocks/Neovest.jpg";
+import TeamsportImage from "@/public/CaseStudy/Teamsport.jpg";
+import TeamsportMainImage from "@/public/CaseStudy/Teamsport-main.jpg";
+import TeamsportMobImage from "@/public/CaseStudy/Teamsport-mob.jpg";
+import TeamsportMainMobImage from "@/public/CaseStudy/Teamsport-main-mob.jpg";
 
 import styles from "../workpages.module.scss";
 
@@ -23,17 +30,20 @@ export default function Teamsport() {
         </p>
       </LeftAlignedText>
       <div className={styles.imageContainer}>
-        <picture>
-          <source
-            srcSet="/CaseStudy/Teamsport.jpg"
-            media="(min-width: 768px)"
-          />
-          <img
-            className={styles.image}
-            src="/CaseStudy/Teamsport-mob.jpg"
-            alt="Teamsport background image"
-          />
-        </picture>
+        <Image
+          className={styles.imageDesktop}
+          src={TeamsportImage}
+          sizes="100vw"
+          alt="Teamsport background image"
+          placeholder="blur"
+        />
+        <Image
+          className={styles.imageMob}
+          src={TeamsportMobImage}
+          sizes="100vw"
+          alt="Teamsport background image"
+          placeholder="blur"
+        />
       </div>
       <Results
         title="Champion results:"
@@ -58,17 +68,20 @@ export default function Teamsport() {
         </p>
       </TextWithTitle>
       <div className={styles.imageContainer}>
-        <picture>
-          <source
-            srcSet="/CaseStudy/Teamsport-main.jpg"
-            media="(min-width: 768px)"
-          />
-          <img
-            className={styles.image}
-            src="/CaseStudy/Teamsport-main-mob.jpg"
-            alt="Teamsport background image"
-          />
-        </picture>
+        <Image
+          className={styles.imageDesktop}
+          src={TeamsportMainImage}
+          sizes="100vw"
+          alt="Teamsport background image"
+          placeholder="blur"
+        />
+        <Image
+          className={styles.imageMob}
+          src={TeamsportMainMobImage}
+          sizes="100vw"
+          alt="Teamsport background image"
+          placeholder="blur"
+        />
       </div>
       <div className={styles.featureBlockContainer}>
         <FeatureBlockStatic
