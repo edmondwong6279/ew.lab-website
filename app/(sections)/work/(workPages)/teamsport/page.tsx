@@ -34,6 +34,7 @@ export default function Teamsport() {
           className={styles.imageDesktop}
           src={TeamsportImage}
           sizes="100vw"
+          priority
           alt="Teamsport background image"
           placeholder="blur"
         />
@@ -41,6 +42,7 @@ export default function Teamsport() {
           className={styles.imageMob}
           src={TeamsportMobImage}
           sizes="100vw"
+          priority
           alt="Teamsport background image"
           placeholder="blur"
         />
@@ -72,6 +74,7 @@ export default function Teamsport() {
           className={styles.imageDesktop}
           src={TeamsportMainImage}
           sizes="100vw"
+          priority
           alt="Teamsport background image"
           placeholder="blur"
         />
@@ -79,6 +82,7 @@ export default function Teamsport() {
           className={styles.imageMob}
           src={TeamsportMainMobImage}
           sizes="100vw"
+          priority
           alt="Teamsport background image"
           placeholder="blur"
         />

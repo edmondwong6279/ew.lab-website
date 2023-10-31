@@ -32,6 +32,7 @@ export default function Hestia() {
           className={styles.imageDesktop}
           src={HestiaImage}
           sizes="100vw"
+          priority
           alt="Hestia background image"
           placeholder="blur"
         />
@@ -39,6 +40,7 @@ export default function Hestia() {
           className={styles.imageMob}
           src={HestiaMobImage}
           sizes="100vw"
+          priority
           alt="Hestia background image"
           placeholder="blur"
         />
@@ -60,6 +62,7 @@ export default function Hestia() {
           className={styles.imageDesktop}
           src={HestiaMainImage}
           sizes="100vw"
+          priority
           alt="Hestia background image"
           placeholder="blur"
         />
@@ -67,6 +70,7 @@ export default function Hestia() {
           className={styles.imageMob}
           src={HestiaMainMobImage}
           sizes="100vw"
+          priority
           alt="Hestia background image"
           placeholder="blur"
         />

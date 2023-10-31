@@ -34,6 +34,7 @@ export default function Neovest() {
           className={styles.imageDesktop}
           src={NeovestImage}
           sizes="100vw"
+          priority
           alt="Neovest background image"
           placeholder="blur"
         />
@@ -41,6 +42,7 @@ export default function Neovest() {
           className={styles.imageMob}
           src={NeovestMobImage}
           sizes="100vw"
+          priority
           alt="Neovest background image"
           placeholder="blur"
         />
@@ -60,6 +62,7 @@ export default function Neovest() {
           className={styles.imageDesktop}
           src={NeovestMainImage}
           sizes="100vw"
+          priority
           alt="Neovest background image"
           placeholder="blur"
         />
@@ -67,6 +70,7 @@ export default function Neovest() {
           className={styles.imageMob}
           src={NeovestMainMobImage}
           sizes="100vw"
+          priority
           alt="Neovest background image"
           placeholder="blur"
         />

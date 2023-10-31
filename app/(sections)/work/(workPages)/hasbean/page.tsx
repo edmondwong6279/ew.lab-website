@@ -30,6 +30,7 @@ export default function HasbeanComponent() {
           className={styles.imageDesktop}
           src={HasbeanImage}
           sizes="100vw"
+          priority
           alt="Hasbean background image"
           placeholder="blur"
         />
@@ -37,6 +38,7 @@ export default function HasbeanComponent() {
           className={styles.imageMob}
           src={HasbeanMobImage}
           sizes="100vw"
+          priority
           alt="Hasbean background image"
           placeholder="blur"
         />
@@ -56,6 +58,7 @@ export default function HasbeanComponent() {
           className={styles.imageDesktop}
           src={HasbeanMainImage}
           sizes="100vw"
+          priority
           alt="Hasbean background image"
           placeholder="blur"
         />
@@ -63,6 +66,7 @@ export default function HasbeanComponent() {
           className={styles.imageMob}
           src={HasbeanMainMobImage}
           sizes="100vw"
+          priority
           alt="Hasbean background image"
           placeholder="blur"
         />

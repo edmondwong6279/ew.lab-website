@@ -32,6 +32,7 @@ export default function Tevva() {
           className={styles.imageDesktop}
           src={TevvaImage}
           sizes="100vw"
+          priority
           alt="Tevva background image"
           placeholder="blur"
         />
@@ -39,6 +40,7 @@ export default function Tevva() {
           className={styles.imageMob}
           src={TevvaMobImage}
           sizes="100vw"
+          priority
           alt="Tevva background image"
           placeholder="blur"
         />
@@ -61,6 +63,7 @@ export default function Tevva() {
           className={styles.imageDesktop}
           src={TevvaMainImage}
           sizes="100vw"
+          priority
           alt="Tevva background image"
           placeholder="blur"
         />
@@ -68,6 +71,7 @@ export default function Tevva() {
           className={styles.imageMob}
           src={TevvaMainMobImage}
           sizes="100vw"
+          priority
           alt="Tevva background image"
           placeholder="blur"
         />

@@ -38,6 +38,7 @@ export default function Superdry() {
           className={styles.imageDesktop}
           src={SuperdryImage}
           sizes="100vw"
+          priority
           alt="Superdry background image"
           placeholder="blur"
         />
@@ -45,6 +46,7 @@ export default function Superdry() {
           className={styles.imageMob}
           src={SuperdryMobImage}
           sizes="100vw"
+          priority
           alt="Superdry background image"
           placeholder="blur"
         />
@@ -66,6 +68,7 @@ export default function Superdry() {
           className={styles.imageDesktop}
           src={SuperdryMainImage}
           sizes="100vw"
+          priority
           alt="Superdry background image"
           placeholder="blur"
         />
@@ -73,6 +76,7 @@ export default function Superdry() {
           className={styles.imageMob}
           src={SuperdryMainMobImage}
           sizes="100vw"
+          priority
           alt="Superdry background image"
           placeholder="blur"
         />

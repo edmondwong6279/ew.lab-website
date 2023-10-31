@@ -32,6 +32,7 @@ export default function isky() {
           className={styles.imageDesktop}
           src={iskyImage}
           sizes="100vw"
+          priority
           alt="isky background image"
           placeholder="blur"
         />
@@ -39,6 +40,7 @@ export default function isky() {
           className={styles.imageMob}
           src={iskyMobImage}
           sizes="100vw"
+          priority
           alt="isky background image"
           placeholder="blur"
         />
@@ -59,6 +61,7 @@ export default function isky() {
           className={styles.imageDesktop}
           src={iskyMainImage}
           sizes="100vw"
+          priority
           alt="isky background image"
           placeholder="blur"
         />
@@ -66,6 +69,7 @@ export default function isky() {
           className={styles.imageMob}
           src={iskyMainMobImage}
           sizes="100vw"
+          priority
           alt="isky background image"
           placeholder="blur"
         />
