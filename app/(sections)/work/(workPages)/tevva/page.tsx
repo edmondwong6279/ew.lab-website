@@ -77,12 +77,6 @@ export default function Tevva() {
           placeholder="blur"
         />
       </div>
-      <TextWithTitle title="Driving the experience forward">
-        <p>
-          In addition to the new website and technology foundations, we designed
-          and developed digital kiosks that are used at key industry events.
-        </p>
-      </TextWithTitle>
       <Quote
         quote={
           '"We highly recommend LAB for their outstanding contribution to our digital assets project. They skillfully leveraged a state-of-the-art headless CMS website and touch-screen kiosk to create great digital assets. LAB\'s expertise and meticulous attention to detail truly set them apart. Their account management team demonstrated exceptional responsibility and provided valuable support, especially when working with team members less versed in technical matters and they went above and beyond their duty to help us over a holiday period to prepare assets for a show. We enthusiastically endorse Riverr and look forward to the possibility of collaborating with them again in the future."'
