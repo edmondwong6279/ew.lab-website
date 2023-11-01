@@ -26,7 +26,7 @@ export default function Work() {
   return (
     <main>
       <PageTitle
-        title="Combining the right expertise to deliver new approaches and lasting impact"
+        title="Delivering work that has a lasting impact."
         variant="work"
       />
       <div className={styles.workList}>

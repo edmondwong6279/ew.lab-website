@@ -4,6 +4,7 @@ import PageTitle from "@/components/PageTitle";
 import LeftAlignedText from "@/components/LeftAlignedText";
 import TextWithTitle from "@/components/TextWithTitle";
 import FeatureBlockStatic from "@/components/FeatureBlockStatic";
+import Quote from "@/components/Quote";
 
 import HestiaImage from "@/public/FeatureBlocks/Hestia.jpg";
 import TevvaImage from "@/public/CaseStudy/Tevva.jpg";
@@ -82,6 +83,12 @@ export default function Tevva() {
           and developed digital kiosks that are used at key industry events.
         </p>
       </TextWithTitle>
+      <Quote
+        quote={
+          '"We highly recommend LAB for their outstanding contribution to our digital assets project. They skillfully leveraged a state-of-the-art headless CMS website and touch-screen kiosk to create great digital assets. LAB\'s expertise and meticulous attention to detail truly set them apart. Their account management team demonstrated exceptional responsibility and provided valuable support, especially when working with team members less versed in technical matters and they went above and beyond their duty to help us over a holiday period to prepare assets for a show. We enthusiastically endorse Riverr and look forward to the possibility of collaborating with them again in the future."'
+        }
+        author={"Chris Hawken, Head of Marketing Europe"}
+      />
       <div className={styles.featureBlockContainer}>
         <FeatureBlockStatic
           title={"Hestia"}

@@ -13,21 +13,31 @@ export default function Accordion() {
           <li>Prototyping</li>
           <li>Usability audits</li>
           <li>Inspiration & ideation workshops</li>
-          <li>User centred design</li>
         </ul>
       </details>
 
       <details className={styles.details}>
         <summary className={styles.summary}>Research</summary>
         <ul>
-          <li>Placeholder</li>
+          <li>User research</li>
+          <li>Data led user profiling</li>
+          <li>Persona creation</li>
+          <li>Data analysis</li>
+          <li>Social listening</li>
+          <li>Machine learning models</li>
         </ul>
       </details>
 
       <details className={styles.details}>
         <summary className={styles.summary}>Engineering</summary>
         <ul>
-          <li>Placeholder</li>
+          <li>Composable Architectures</li>
+          <li>Performant UI code</li>
+          <li>Web and Native apps</li>
+          <li>Data platforms</li>
+          <li>Monolith migrations</li>
+          <li>Tech Vendor PoC&apos;s</li>
+          <li>DevOps configuration</li>
         </ul>
       </details>
     </div>

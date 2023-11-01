@@ -17,7 +17,7 @@ export default function About() {
     <main className={styles.container}>
       <Hero
         heroId={"0"}
-        text={"Exceptional insight led digital experiences."}
+        text={"Insight-led design & technology."}
         buttonText={"Get in touch"}
         buttonLink={"/contact"}
         imageLink={AboutImage}
