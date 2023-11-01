@@ -26,6 +26,7 @@
     padding-top: 20px;
     color: var(--white);
     background-color: var(--lab-black);
+    padding-bottom: 0;
 
     @include tablet {
       padding-top: 60px;

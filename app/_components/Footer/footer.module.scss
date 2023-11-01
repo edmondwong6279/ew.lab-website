@@ -71,6 +71,7 @@
 
     .link {
       padding-inline: 20px;
+      text-decoration: underline;
     }
 
     .link + .link {
@@ -87,7 +88,6 @@
 
     .link:hover {
       color: var(--lab-neon);
-      text-decoration: underline;
     }
   }
 }
