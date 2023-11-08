@@ -75,9 +75,11 @@
     background-color: var(--white);
     clip-path: circle(0px at 0 0px);
     transition: 0.5s ease clip-path;
+    pointer-events: none;
 
     &.navOpen {
       clip-path: circle(100%);
+      pointer-events: auto;
     }
   }
 
