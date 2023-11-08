@@ -1,10 +1,8 @@
-import Link from "next/link";
-
 import styles from "./arrow-down.module.scss";
 
 export default function ArrowDown({ anchor }: { anchor: string }) {
   return (
-    <Link href={anchor} className={styles.outerContainer}>
+    <a href={anchor} className={styles.outerContainer}>
       <svg
         width="57"
         height="57"
@@ -20,6 +18,6 @@ export default function ArrowDown({ anchor }: { anchor: string }) {
         />
       </svg>
       <div className={styles.innerContainer}></div>
-    </Link>
+    </a>
   );
 }
