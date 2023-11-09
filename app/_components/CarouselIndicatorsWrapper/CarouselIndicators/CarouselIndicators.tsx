@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 import { interpolateRGB, arrayToRGB, calculateOpacity } from "@/utils/index";
 import { usePositionInViewport, useWindowSize } from "@/hooks/index";
 import { navBarHeight } from "@/constants/index";
@@ -25,10 +23,6 @@ export default function CarouselIndicator({
   const borderColor = arrayToRGB(interpolateRGB(black, neon, opacity));
 
   return (
-    <Link
-      href={`#${link}`}
-      className={styles.container}
-      style={{ borderColor }}
-    />
+    <a href={`#${link}`} className={styles.container} style={{ borderColor }} />
   );
 }
